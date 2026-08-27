@@ -236,6 +236,9 @@ h3 {
 .cite-chip--law {
   background: var(--ink);
 }
+.cite-chip--official-data {
+  background: var(--green);
+}
 
 /* ---------- Banners, verification ---------- */
 

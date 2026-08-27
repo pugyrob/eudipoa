@@ -30,7 +30,7 @@ const registryFile = path.join(ROOT, "content", "sources", "registry.yaml");
 const registry = parse(fs.readFileSync(registryFile, "utf8"));
 const ids = new Set();
 const REQUIRED = ["id", "type", "title", "short", "url", "last_retrieved", "retrieved_via", "review_cycle_days"];
-const TYPES = ["law", "proposal", "technical-draft", "implementation-note", "commentary"];
+const TYPES = ["law", "official-data", "proposal", "technical-draft", "implementation-note", "commentary"];
 for (const s of registry.sources ?? []) {
   for (const f of REQUIRED) {
     if (s[f] === undefined) errors.push(`registry: source "${s.id ?? "?"}" missing field "${f}"`);

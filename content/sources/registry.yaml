@@ -159,6 +159,24 @@ sources:
       entry-into-force clause read from the page.
     review_cycle_days: 90
 
+  - id: nim-2025-25
+    type: official-data
+    status: updated-weekly
+    title: >-
+      EUR-Lex, National transposition measures communicated by the Member
+      States concerning Directive (EU) 2025/25 (CELEX 32025L0025)
+    short: "EUR-Lex transposition notifications for Dir. 2025/25"
+    url: "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32025L0025"
+    publisher: "Publications Office of the European Union (data supplied by Member States)"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      Fetched in a real browser; full snapshot saved to
+      content/sources/raw/dir-2025-25-nim.txt. Member States bear sole
+      responsibility for this data; a notification is not proof of complete
+      transposition, and our country pages treat it as a pointer, not as a
+      gazette read.
+    review_cycle_days: 14
+
   - id: oeil-2025-0358
     type: proposal
     status: awaiting-committee-decision

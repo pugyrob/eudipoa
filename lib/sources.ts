@@ -4,6 +4,7 @@ import { parse } from "yaml";
 
 export type SourceType =
   | "law"
+  | "official-data"
   | "proposal"
   | "technical-draft"
   | "implementation-note"
@@ -28,6 +29,7 @@ export interface Source {
 
 export const TYPE_LABELS: Record<SourceType, string> = {
   law: "Law",
+  "official-data": "Official data",
   proposal: "Proposal",
   "technical-draft": "Technical draft",
   "implementation-note": "Implementation note",
