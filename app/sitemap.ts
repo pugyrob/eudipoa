@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/changelog",
     "/contact",
     "/authors/rob-prime",
+    "/questions",
+    "/updates",
   ].map((p) => ({ url: `${BASE}${p}` }));
 
   const contentPaths = allPages().map((p) => ({

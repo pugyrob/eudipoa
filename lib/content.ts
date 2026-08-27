@@ -30,7 +30,7 @@ export interface HandbookPage {
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 // Directories under content/ that are handbook sections (not sources/raw).
-const SECTIONS = ["poa", "certificate", "mandates", "eidas", "glossary"];
+const SECTIONS = ["poa", "certificate", "mandates", "eidas", "glossary", "updates"];
 
 function walk(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];

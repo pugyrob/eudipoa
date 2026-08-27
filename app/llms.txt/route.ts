@@ -33,6 +33,8 @@ ${pages}
 
 ## Site
 
+- [Plain answers](${BASE}/questions): Common questions answered simply, each cited to the instruments (FAQ).
+- [Updates](${BASE}/updates): Dated, source-verified briefs on developments (RSS: ${BASE}/feed.xml).
 - [Methodology](${BASE}/methodology): How claims are verified and labelled (Law / Proposal / Technical draft / Implementation note / Commentary).
 - [Sources](${BASE}/sources): The public source registry with retrieval dates.
 - [Corrections](${BASE}/corrections): Public correction log.

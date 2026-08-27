@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Source_Serif_4, Inter } from "next/font/google";
+import { Source_Serif_4, Inter, Fraunces } from "next/font/google";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
@@ -11,6 +11,11 @@ const serif = Source_Serif_4({
 const sans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+const display = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-display",
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-GB" className={`${serif.variable} ${sans.variable}`}>
+    <html
+      lang="en-GB"
+      className={`${serif.variable} ${sans.variable} ${display.variable}`}
+    >
       <body>
         <SiteHeader />
         <main className="mx-auto max-w-3xl px-5 py-10">{children}</main>

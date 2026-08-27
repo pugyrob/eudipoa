@@ -55,15 +55,30 @@ For each registry entry: re-fetch. Then:
 
 - **Nothing changed** → bump `last_retrieved` in the registry; bump
   `verified` on any page you actually re-checked against the source.
-- **Something changed** → edit the affected MDX to match the law, and add a
+- **Something changed** → edit the affected MDX to match the law, add a
   changelog entry describing **what changed in the law** (never "updated for
-  SEO"). Update `last_retrieved` and `verified`.
+  SEO"), AND write a dated brief in `content/updates/` (frontmatter like any
+  page; filename `YYYY-MM-slug.mdx`). The brief states what changed, cites
+  the new text, and links the rewritten pages. It flows automatically to
+  /updates, the home page, llms.txt, sitemap and /feed.xml.
+- **Nothing moved → no update brief.** Manufacturing news kills trust.
 - Never auto-rewrite legal content unsupervised. The cron opens an issue; a
   person (or a supervised session) does the pass.
 
 Watchlist: Dir (EU) 2025/25 · Reg (EU) 2024/1183 · IR (EU) 2025/848 ·
-eudi.dev (ARF releases) · Business Wallets policy page (proposal status) ·
-OEIL procedure 2025/0358.
+the missing Art. 24(2) template implementing acts (search EUR-Lex legal acts
+for "digital EU power of attorney" — as of 2026-08-27 only the Directive
+itself exists) · eudi.dev (ARF releases) · Business Wallets policy page ·
+OEIL procedure 2025/0358 · national gazettes once transposition starts
+(rows in /poa/member-states move only on a gazette read).
+
+## Plain answers (/questions)
+
+`app/questions/page.tsx` holds the search-facing FAQ. Each entry has a
+`plain` field (feeds FAQPage JSON-LD) and a rendered answer with `<Cite/>`
+pinpoints — both must say the same thing. Add questions readers actually ask
+(inbox, search consoles), answered from instruments only. Same rules as
+everywhere: no invented dates, "not yet" instead of "soon".
 
 ## Corrections
 

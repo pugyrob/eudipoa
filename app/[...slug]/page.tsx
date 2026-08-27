@@ -9,6 +9,15 @@ import ChangelogSection from "@/components/ChangelogSection";
 
 export const dynamicParams = false;
 
+const SECTION_KICKERS: Record<string, string> = {
+  poa: "The power of attorney",
+  certificate: "The EU Company Certificate",
+  mandates: "Organisational mandates",
+  eidas: "The eIDAS 2 layer",
+  glossary: "Reference",
+  updates: "Update",
+};
+
 export function generateStaticParams() {
   return allPagePaths().map((slug) => ({ slug }));
 }
@@ -54,7 +63,11 @@ export default async function HandbookPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1>{page.meta.title}</h1>
+      <header className="article-header">
+        <p className="kicker">{SECTION_KICKERS[slug[0]] ?? "Handbook"}</p>
+        <h1>{page.meta.title}</h1>
+        <p className="standfirst">{page.meta.description}</p>
+      </header>
       {page.meta.kind === "implementation-note" ? (
         <p className="kind-banner kind-banner--note">
           Implementation note — engineering experience from building against
