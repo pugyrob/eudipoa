@@ -5,6 +5,7 @@ const NAV = [
   { href: "/certificate", label: "Certificate" },
   { href: "/mandates", label: "Mandates" },
   { href: "/eidas/attestation-of-attributes", label: "eIDAS" },
+  { href: "/comply", label: "What to do, by when" },
   { href: "/questions", label: "Plain answers" },
   { href: "/updates", label: "Updates" },
   { href: "/glossary", label: "Glossary" },

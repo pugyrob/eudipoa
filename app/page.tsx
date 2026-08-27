@@ -10,6 +10,12 @@ const START_CARDS = [
     desc: "What it is, who it is for, and where the rules stand today.",
   },
   {
+    href: "/comply",
+    label: "For companies",
+    title: "What to do, by when",
+    desc: "The plain timeline: what is actually obliged, what is merely smart, and what you can safely ignore.",
+  },
+  {
     href: "/questions",
     label: "Plain answers",
     title: "Your question, answered simply",

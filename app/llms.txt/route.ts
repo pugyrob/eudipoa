@@ -31,8 +31,11 @@ Commission implementing acts due 31 July 2026; Member State transposition due
 
 ${pages}
 
+Full text of every explainer, with citations expanded inline: ${BASE}/llms-full.txt
+
 ## Site
 
+- [What to do, by when](${BASE}/comply): The plain compliance timeline — what is obliged vs merely smart, per audience.
 - [Plain answers](${BASE}/questions): Common questions answered simply, each cited to the instruments (FAQ).
 - [Updates](${BASE}/updates): Dated, source-verified briefs on developments (RSS: ${BASE}/feed.xml).
 - [Methodology](${BASE}/methodology): How claims are verified and labelled (Law / Proposal / Technical draft / Implementation note / Commentary).

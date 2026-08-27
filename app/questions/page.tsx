@@ -38,6 +38,31 @@ const QA: {
     ),
   },
   {
+    id: "what-must-my-company-do",
+    q: "What does my company actually have to do, and by when?",
+    plain:
+      "For most limited companies: very little is obliged. The two real duties, from 31 July 2028 as transposed: file any change to your registered information within at most 15 working days, and keep your register data accurate. Partnerships of the types listed in Annex IIB get a new compulsory disclosure regime. Everything else — the certificate, the digital power of attorney — is a right, not a duty.",
+    a: (
+      <>
+        <p>
+          For most limited companies: very little is <em>obliged</em>. The two
+          real duties, once your Member State applies the rules (from{" "}
+          <strong>31 July 2028</strong>): file any change to your registered
+          documents and information within at most{" "}
+          <strong>15 working days</strong>{" "}
+          <Cite id="dir-2025-25" pin="Art. 15(2)(a) of Dir. (EU) 2017/1132 as replaced" />
+          , with penalties for late filing behind it{" "}
+          <Cite id="dir-2025-25" pin="recital 22" /> — and keep your register
+          data accurate, because everyone else will now rely on it.
+          Partnerships listed in Annex IIB get a genuinely new compulsory
+          disclosure regime <Cite id="dir-2025-25" pin="Art. 14a" />.
+          Everything else is a right, not a duty. The full audience-by-audience
+          timeline: <Link href="/comply">What to do, by when</Link>.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "prove-company-exists",
     q: "How do I prove my company exists in another EU country?",
     plain:

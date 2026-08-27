@@ -6,6 +6,7 @@ import Cite from "@/components/Cite";
 import VerificationBox from "@/components/VerificationBox";
 import SourcesSection from "@/components/SourcesSection";
 import ChangelogSection from "@/components/ChangelogSection";
+import CiteThisPage from "@/components/CiteThisPage";
 
 export const dynamicParams = false;
 
@@ -16,6 +17,7 @@ const SECTION_KICKERS: Record<string, string> = {
   eidas: "The eIDAS 2 layer",
   glossary: "Reference",
   updates: "Update",
+  comply: "What to do, by when",
 };
 
 export function generateStaticParams() {
@@ -30,7 +32,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getPage(slug);
   if (!page) return {};
-  return { title: page.meta.title, description: page.meta.description };
+  const url = `https://eudipoa.com/${slug.join("/")}`;
+  return {
+    title: page.meta.title,
+    description: page.meta.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: page.meta.title,
+      description: page.meta.description,
+      url,
+      siteName: "EUDIPOA",
+      type: "article",
+      publishedTime: page.meta.published,
+      modifiedTime: page.meta.verified,
+      authors: ["https://eudipoa.com/authors/rob-prime"],
+    },
+    twitter: {
+      card: "summary",
+      title: page.meta.title,
+      description: page.meta.description,
+    },
+  };
 }
 
 export default async function HandbookPage({
@@ -87,6 +109,7 @@ export default async function HandbookPage({
         options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
       />
       <SourcesSection ids={page.meta.verified_against} />
+      <CiteThisPage meta={page.meta} slug={slug} />
       <ChangelogSection entries={page.meta.changelog} />
     </article>
   );

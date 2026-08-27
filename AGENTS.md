@@ -72,6 +72,15 @@ itself exists) · eudi.dev (ARF releases) · Business Wallets policy page ·
 OEIL procedure 2025/0358 · national gazettes once transposition starts
 (rows in /poa/member-states move only on a gazette read).
 
+## The compliance timeline (/comply)
+
+`content/comply/index.mdx` is the audience-by-audience "what to do, by when"
+page. It must always distinguish what is **obliged** from what is merely
+smart — never invent obligations, and keep the "what you do NOT have to do"
+section, which is the page's credibility anchor. Re-check it whenever a date
+moves (template acts adopted, a transposition lands) — its summary table is
+the most quotable thing on the site and must never go stale.
+
 ## Plain answers (/questions)
 
 `app/questions/page.tsx` holds the search-facing FAQ. Each entry has a
