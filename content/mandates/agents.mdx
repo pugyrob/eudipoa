@@ -1,0 +1,50 @@
+---
+title: Agents and systems acting under mandates
+description: An implementation note on software and AI agents acting under organisational authority — and why a valid token is not the same thing as an allowed action.
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [dir-2025-25, reg-2024-1183]
+review_cycle_days: 90
+kind: implementation-note
+changelog:
+  - date: 2026-08-27
+    note: First published. Implementation note distilled from building Mandate Rail; legal anchors cited where they exist.
+---
+
+**A credential proves that something was issued. An action is allowed only if the authority behind that credential covers this action, for this principal, within this scope, and is still in force at this moment. Systems that collapse those two checks into one — "the token verified, proceed" — are the ones that act without authority while every signature validates.** This is the central engineering lesson of building on mandates, and the new EU instruments make it more relevant, not less.
+
+## Who this page is for
+
+Teams building services where software acts for organisations — filing, signing, transacting, or (increasingly) AI agents doing all three — and the relying parties who must decide whether to honour those actions.
+
+## What the law actually authorises
+
+Start with a sober reading. The digital EU power of attorney authorises "a person to represent the company" <Cite id="dir-2025-25" pin="Art. 16c(1)" />; the eIDAS attribute class is "powers and mandates to represent natural or legal persons" <Cite id="reg-2024-1183" pin="Annex VI, point 9" />. The instruments speak of persons. Nothing in either text creates a category of autonomous software as attorney. In practice today, a system acts **under** a person's or organisation's authority — the mandate chain ends at a human or legal person, and your architecture has to preserve that chain, not obscure it.
+
+## Valid token ≠ allowed action
+
+The failure pattern, concretely. A relying party receives a presentation: a well-formed attestation, valid signature, trusted issuer, not expired. Every cryptographic check passes. And yet the action can still be one the company never authorised, because:
+
+- **Scope.** The instrument covers registering a branch; the action is filing a merger. The acceptance rule was never broader than "as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(2)" /> — scope is part of the evidence, and an out-of-scope action has no cover at all.
+- **Type.** The representation is joint, and one of two required actors is acting alone. Joint-versus-sole is first-class data in both the certificate <Cite id="dir-2025-25" pin="Art. 16b(2)(j)" /> and the power of attorney template's "type of representation" field <Cite id="dir-2025-25" pin="Art. 16c(4)" />.
+- **Time.** The instrument was revoked this morning. Where the qualified-attestation rule applies, validity ends "from the moment of its revocation" with no reversal <Cite id="reg-2024-1183" pin="Art. 45d(4) of Reg. 910/2014 as inserted" /> — but the credential in the presenter's wallet does not physically vanish. Signature validity and legal validity have different clocks. See [Revocation](/poa/revocation).
+- **Chain.** The grantor's own authority had limits, and the grant exceeded them. The verification floor at granting <Cite id="dir-2025-25" pin="Art. 16c(1), second subpara." /> mitigates this at issue time; it cannot re-run itself later.
+
+The eIDAS framework quietly agrees with the split: relying parties, not wallets, "shall be responsible for carrying out the procedure for authenticating and validating" what is presented to them <Cite id="reg-2024-1183" pin="Art. 5b(9) of Reg. 910/2014 as inserted" />. Verification of the artefact is the floor. Authorisation of the action is the job.
+
+## The check that has to run at action time
+
+What we have converged on in practice, per action — not per session, per action:
+
+1. Resolve the actor to a mandate ([the mandate object](/mandates/mandate-object)), not just to an identity.
+2. Test the action against the mandate's scope and constraints — procedure, counterparty, value, jurisdiction.
+3. Test the type — is a co-actor required, and present?
+4. Test freshness — status checked against the authoritative source (register where filed, revocation status where the attestation scheme provides it), with a bounded staleness the risk owner has signed off, because "check every time" has a cost and "never re-check" has a bigger one.
+5. Log the decision with the evidence used — when the action is later disputed, "were they allowed, then?" is answered by the log, not by re-deriving.
+
+For AI agents specifically, one addition has earned its keep: **narrower, shorter mandates**. An agent that can retry, parallelise and act at machine speed turns a broad mandate into a broad blast radius. The template's scope field is the throttle the legislator has already given you; use it aggressively.
+
+## What we are not claiming
+
+No EU instrument currently defines "AI agent mandates", and this page does not pretend otherwise. What exists is: persons, powers of attorney, attestations of powers and mandates, and relying-party duties. The engineering above is how we make those primitives safe to operate — it is practice, and it will be revised as the implementing acts and national transpositions land.

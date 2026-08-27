@@ -1,0 +1,49 @@
+---
+title: Who may act for a company
+description: Statutory representation, register disclosure, and conferred authority — how EU law answers the question of who can bind a company, and where the digital EU power of attorney fits.
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [dir-2025-25, dir-2017-1132, reg-2024-1183]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full text of Directive (EU) 2025/25 fetched from EUR-Lex on 2026-08-27.
+---
+
+**Two different questions hide inside "who may act for this company": who holds original authority to bind it (a national company-law fact, disclosed in registers), and who has been granted authority for a particular task (an instrument, such as a power of attorney). EU law digitises both — but never merges them.** Most authority failures come from answering one question and assuming the other.
+
+## Who this page is for
+
+Anyone verifying a counterparty's signatory: relying parties, banks' onboarding teams, notaries, registry staff, and engineers automating the check.
+
+## Original authority: the representatives
+
+National company law determines who represents a company — typically its directors or board, sometimes jointly. What EU company law harmonises is the **disclosure**: information on legal representatives "is required to be disclosed in the business registers" under Directive (EU) 2017/1132 <Cite id="dir-2025-25" pin="recital 28" /> <Cite id="dir-2017-1132" />.
+
+Directive (EU) 2025/25 upgrades how that disclosure travels. The [EU Company Certificate](/certificate) states, cross-border and in harmonised form, "any persons who either as a body or as members of any such body are authorised by the company to represent it in dealings with third parties and in legal proceedings, and whether those persons may do so alone or are required to act jointly" — including identifying details where the representative is itself a legal person <Cite id="dir-2025-25" pin="Art. 16b(2)(j)–(k)" />.
+
+Note what the register-level answer gives you: names, and the alone-or-jointly rule. It does not give you transaction-level scope — original representation is general, and its limits (if any) are a national-law matter.
+
+## Conferred authority: the mandate
+
+The representatives can authorise someone else. For cross-border company-law procedures — formation, branches, conversions, mergers, divisions — the harmonised instrument is the [digital EU power of attorney](/poa): granted under national requirements, with mandatory verification of the grantor's identity, legal capacity **and authority to represent** <Cite id="dir-2025-25" pin="Art. 16c(1), second subpara." />, and accepted as evidence of the attorney's entitlement "as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(2)" />.
+
+The verification floor is the joint between the two layers: before an authority certifies a grant, it must check that the grantor themselves may bind the company. Conferred authority chains back to original authority, and the chain is checked at the moment of granting.
+
+Outside the Directive's scope — banking, tax, contracts, litigation — conferring authority remains a purely national-law affair. The Directive is explicit that the digital EU power of attorney is "without prejudice to national rules on legal and statutory representation or any other types of powers of attorney" <Cite id="dir-2025-25" pin="recital 28" />.
+
+## Attested authority: the wallet dimension
+
+The eIDAS 2 framework makes "powers and mandates to represent natural or legal persons" an attribute class: on the minimum list Member States must make verifiable against authentic sources by qualified trust service providers <Cite id="reg-2024-1183" pin="Annex VI, point 9" />, with issuers of such attestations treated as trust service providers of electronic attestation of attributes <Cite id="reg-2024-1183" pin="recital 55" />. An attestation issued by or on behalf of a public sector body responsible for an authentic source has the same legal effect as its paper equivalent and is recognised across Member States <Cite id="reg-2024-1183" pin="Art. 45b(2)–(3)" />.
+
+The authentic source for "who represents this company" is, in substance, the business register — which is why the register layer and the wallet layer are converging on the same facts by different routes.
+
+## The checklist, in law's own order
+
+1. **Is the actor an original representative?** Check the register / EU Company Certificate, including the alone-or-jointly rule <Cite id="dir-2025-25" pin="Art. 16b(2)(j)" />. Remember the certificate speaks "at the time of its issuance" <Cite id="dir-2025-25" pin="Art. 16b(1)" />.
+2. **If not — do they hold a conferred instrument?** For in-scope cross-border procedures, the digital EU power of attorney is evidence of entitlement, within its stated scope <Cite id="dir-2025-25" pin="Art. 16c(2)" />.
+3. **Does the action fall inside the instrument's scope?** The template's mandatory fields — scope of representation, person authorised, type of representation <Cite id="dir-2025-25" pin="Art. 16c(4)" /> — exist precisely so this question has an answer.
+4. **Is the instrument still in force?** See [Revocation](/poa/revocation) — the hardest step, and the one the law leaves most open.
+
+How to encode that checklist in software is the subject of the implementation notes: [the mandate object](/mandates/mandate-object) and [agents](/mandates/agents).

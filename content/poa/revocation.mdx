@@ -1,0 +1,49 @@
+---
+title: Revoking a digital EU power of attorney
+description: What Directive (EU) 2025/25 says about amending and revoking a digital EU power of attorney — and the revocation-visibility problem it leaves open.
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [dir-2025-25, reg-2024-1183]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full texts of Directive (EU) 2025/25 and Regulation (EU) 2024/1183 fetched from EUR-Lex on 2026-08-27.
+---
+
+**Revocation follows the same national-law path as the grant: verified by courts, notaries or other competent authorities, compatible with the EUDI wallet, optionally filed with a register. What the Directive does not create is a Union-wide, real-time way for a relying party to learn that an instrument was revoked this morning.** That gap is the most consequential open question in the whole regime.
+
+## Who this page is for
+
+Companies that need to cut off an authorisation cleanly, relying parties deciding how much to trust a presented instrument, and engineers designing the check that runs at the moment of reliance.
+
+## What the law says
+
+**Revocation is a national-law act with a verification floor.** The instrument "shall be drawn up, amended or revoked in accordance with national requirements", which must at least include verification — by courts, notaries or other competent authorities — of the identity, legal capacity and authority to represent of the person revoking <Cite id="dir-2025-25" pin="Art. 16c(1), second subpara." />. The same three checks as at the grant: revocation is not a casual click, it is a verified legal act.
+
+**Revocation must be wallet-compatible.** Member States must ensure that the instrument's "granting, amendment or revocation is compatible for use with the European Digital Identity Wallet" <Cite id="dir-2025-25" pin="Art. 16c(1), third subpara." />. The lifecycle, not just the issuance, has to work in wallet terms.
+
+**Filing is optional, Member State by Member State.** A Member State "may require that the digital EU power of attorney, any amendment to it, and any revocation of it, is to be filed with a register", with access fees capped at administrative cost <Cite id="dir-2025-25" pin="Art. 16c(3)" />. The recitals leave the choice of register — business register or another under national law — to the Member State <Cite id="dir-2025-25" pin="recital 28" />.
+
+**If the instrument is a qualified attestation, revocation is final.** Where the power of attorney is delivered as a qualified electronic attestation of attributes under the eIDAS framework, Regulation (EU) 2024/1183 is blunt: a revoked qualified attestation "shall lose its validity from the moment of its revocation and its status shall not in any circumstances be reverted" <Cite id="reg-2024-1183" pin="Art. 45d(4) of Reg. 910/2014 as inserted" />. No un-revoking. A restored authority means a new instrument.
+
+## What the law does not say
+
+**How a relying party finds out.** Article 16c(2) obliges acceptance of the instrument as evidence of authority "as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(2)" /> — but a document, once issued, does not know it has been revoked. The Directive's answer is partial at best:
+
+- Filing with a register makes revocation discoverable — but filing is optional per Member State, so discoverability will vary across 27 legal systems.
+- The technical specifications in the Article 24(2)(e) implementing act, and the wallet's attestation machinery, could carry revocation status — the eIDAS framework knows the concept of a revoked attestation losing validity at the moment of revocation. But as of this page's last verification we have not seen an adopted template act, so how status-checking will actually work is unknown.
+
+We flag this because it is where paper-world assumptions break. A paper power of attorney is "checked" once, by a human, on presentation day. A digital instrument presented to an online procedure can and should be checked at the moment of each reliance — if the rails to do so exist. Whether they will, per Member State, is precisely what our [transposition table](/poa/member-states) will track.
+
+## Practical consequences you can already bank on
+
+1. **Revocation requires the same institutional path as granting.** Plan for it: if your national transposition routes granting through a notary, expect revocation to go through one too.
+2. **Filed beats unfiled.** In Member States that require filing, the register becomes the authoritative place to check; fees for access are cost-capped <Cite id="dir-2025-25" pin="Art. 16c(3)" />.
+3. **Scope-limiting beats revoking.** Because the instrument is accepted only "as specified in the document", a tightly scoped, short-lived instrument needs revoking less often than a broad one. The template's mandatory "scope of representation" field <Cite id="dir-2025-25" pin="Art. 16c(4)" /> is the risk-control surface.
+
+## Common confusions
+
+**"Deleting it from the wallet revokes it."** Nothing in the instrument says that. Revocation is a verified national-law act; removing a credential from a device is housekeeping.
+
+**"Revocation takes effect when the relying party learns of it."** The qualified-attestation rule says validity is lost "from the moment of its revocation" <Cite id="reg-2024-1183" pin="Art. 45d(4)" />. How that interacts with a relying party who reasonably relied in ignorance is a national-law and case-law question the instruments do not answer — and this site will not pretend they do.

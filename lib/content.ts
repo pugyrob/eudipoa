@@ -8,6 +8,8 @@ export interface ChangelogEntry {
   note: string;
 }
 
+export type PageKind = "explainer" | "implementation-note" | "proposal-tracker";
+
 export interface PageMeta {
   title: string;
   description: string;
@@ -17,6 +19,7 @@ export interface PageMeta {
   verified_against: string[];
   review_cycle_days: number;
   changelog: ChangelogEntry[];
+  kind: PageKind;
 }
 
 export interface HandbookPage {
@@ -93,9 +96,16 @@ export function getPage(slug: string[]): HandbookPage | null {
     changelog: (data.changelog as { date: unknown; note: string }[]).map(
       (c) => ({ date: toDate(c.date, "changelog.date", rel), note: c.note })
     ),
+    kind: (data.kind as PageKind) ?? "explainer",
   };
 
   return { slug, meta, body: content };
+}
+
+export function allPages(): HandbookPage[] {
+  return allPagePaths()
+    .map((slug) => getPage(slug))
+    .filter((p): p is HandbookPage => p !== null);
 }
 
 export function verificationOverdue(meta: PageMeta): boolean {

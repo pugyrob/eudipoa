@@ -29,6 +29,9 @@ export default function SiteFooter() {
           <Link href="/about">About</Link>
           <Link href="/methodology">Methodology</Link>
           <Link href="/sources">Sources</Link>
+          <Link href="/corrections">Corrections</Link>
+          <Link href="/changelog">Changelog</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
           <a href="mailto:hello@eudipoa.com">hello@eudipoa.com</a>
         </nav>

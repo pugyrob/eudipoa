@@ -1,0 +1,47 @@
+---
+title: Electronic attestation of attributes
+description: "The eIDAS 2 machinery for attested facts — definitions, legal effects, qualified attestations, authentic sources, and why mandates are on the minimum list."
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [reg-2024-1183, dir-2025-25]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full text of Regulation (EU) 2024/1183 fetched from EUR-Lex on 2026-08-27.
+---
+
+**An electronic attestation of attributes is "an attestation in electronic form that allows attributes to be authenticated" — the eIDAS 2 mechanism for carrying verified facts about a person or organisation, including powers and mandates to represent. Qualified attestations, and attestations from public-sector authentic sources, carry the same legal effect as paper.** This is the machinery the digital EU power of attorney is expected to ride on.
+
+## Who this page is for
+
+Anyone who needs the attestation layer straight before reasoning about mandates: trust service providers, wallet integrators, relying parties, and readers of our [wallet mapping](/poa/wallet).
+
+## The definitions, from the instrument
+
+Regulation (EU) 2024/1183 inserts these definitions into Regulation (EU) No 910/2014:
+
+- **Electronic attestation of attributes (EAA):** "an attestation in electronic form that allows attributes to be authenticated" <Cite id="reg-2024-1183" pin="Art. 3 definitions as amended" />.
+- **Qualified electronic attestation of attributes (QEAA):** an EAA "issued by a qualified trust service provider" meeting the requirements of Annex V <Cite id="reg-2024-1183" pin="Art. 3 definitions as amended" />.
+- **Authentic source:** "a repository or system, held under the responsibility of a public sector body or private entity, that contains and provides attributes about a natural or legal person or object and that is considered to be a primary source of that information or recognised as authentic in accordance with Union or national law" <Cite id="reg-2024-1183" pin="Art. 3 definitions as amended" />.
+
+## Legal effects — Section 9, Articles 45b–45f
+
+The attestation rules sit in a dedicated section inserted into Regulation 910/2014:
+
+- **Non-discrimination.** An EAA "shall not be denied legal effect or admissibility as evidence in legal proceedings on the sole ground that it is in electronic form" or that it is not qualified <Cite id="reg-2024-1183" pin="Art. 45b(1)" />.
+- **Paper equivalence.** A QEAA — and an attestation issued by or on behalf of a public sector body responsible for an authentic source — "shall have the same legal effect as lawfully issued attestations in paper form" <Cite id="reg-2024-1183" pin="Art. 45b(2)" />.
+- **Mutual recognition.** A public-sector authentic-source attestation from one Member State is recognised as such in all Member States <Cite id="reg-2024-1183" pin="Art. 45b(3)" />.
+- **Qualified requirements and revocation.** QEAAs must meet Annex V; no additional mandatory requirements may be imposed on them; and a revoked QEAA loses validity from the moment of revocation, never to be reverted <Cite id="reg-2024-1183" pin="Art. 45d(1), (3), (4)" />.
+- **Verification against authentic sources.** For at least the attributes in Annex VI, Member States must — within 24 months of the wallet implementing acts entering into force — enable qualified providers to verify those attributes against public-sector authentic sources at the user's request <Cite id="reg-2024-1183" pin="Art. 45e(1)" />.
+- **Public-sector attestations.** Attestations issued by or on behalf of a public sector body responsible for an authentic source have their own requirements track, anchored in Annex VII <Cite id="reg-2024-1183" pin="Art. 45f(1)" />.
+
+## Why this matters for mandates
+
+Two provisions put organisational authority squarely inside this machinery. The recitals name "powers and mandates to represent or act on behalf of natural or legal persons" among the attestations whose issuers should be considered trust service providers of EAAs <Cite id="reg-2024-1183" pin="recital 55" />. And Annex VI's minimum list of attributes that must be verifiable against authentic sources includes, as point 9, "Powers and mandates to represent natural or legal persons" <Cite id="reg-2024-1183" pin="Annex VI, point 9" />.
+
+Company law then meets this halfway: the digital EU power of attorney "should meet the requirements on electronic attestation of attributes set in Regulation (EU) 2024/1183" and the wallet's technical specifications <Cite id="dir-2025-25" pin="recital 27" />. One machinery, two instruments — the attestation layer carries, the company-law layer decides what the carried thing legally is.
+
+## What an attestation does not do
+
+An attestation authenticates attributes — it proves a fact was attested by an issuer at a point in time. It does not, by itself, make an action lawful: scope, joint-representation rules and revocation still bite at the moment of reliance, which is why [valid token ≠ allowed action](/mandates/agents) is a page on this site. Relying parties remain responsible for authenticating and validating what is presented to them <Cite id="reg-2024-1183" pin="Art. 5b(9)" />.

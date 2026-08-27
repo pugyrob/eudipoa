@@ -1,0 +1,49 @@
+---
+title: The digital EU power of attorney and the EUDI wallet
+description: How Directive (EU) 2025/25's power of attorney maps onto the European Digital Identity Wallet and the attestation-of-attributes machinery of Regulation (EU) 2024/1183.
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [dir-2025-25, reg-2024-1183, ir-2024-2977, ir-2024-2981, eudi-arf]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full texts of Directive (EU) 2025/25 and Regulation (EU) 2024/1183 fetched from EUR-Lex on 2026-08-27.
+---
+
+**The digital EU power of attorney must be compatible for use with the European Digital Identity Wallet, and the wallet is where the legislator expects it to live — but the two run on different clocks: Member States must provide wallets by 24 December 2026, while the power of attorney rules apply from 31 July 2028.** The wallet arrives first; the instrument it will carry comes later.
+
+## Who this page is for
+
+Wallet providers and integrators planning attestation support, relying parties wondering what will actually be presented to them, and anyone mapping the company-law instrument onto the eIDAS 2 machinery.
+
+## What the company-law side requires
+
+Article 16c ties the power of attorney to the wallet in one sentence: Member States must ensure the instrument is authenticated by trust services under Regulation (EU) No 910/2014, "and that its granting, amendment or revocation is compatible for use with the European Digital Identity Wallet as provided for in Regulation (EU) 2024/1183" <Cite id="dir-2025-25" pin="Art. 16c(1), third subpara." />. The recitals go further: the instrument "should meet the requirements on electronic attestation of attributes" in Regulation (EU) 2024/1183 and the technical specifications of the wallet, precisely to stop Member States building parallel, non-interoperable systems <Cite id="dir-2025-25" pin="recital 27" />.
+
+The Commission's implementing act establishing the template — due by 31 July 2026 — must itself include "compatibility with the European Digital Identity Wallet" in the technical specifications <Cite id="dir-2025-25" pin="Art. 24(2)(e)" />.
+
+## What the eIDAS 2 side provides
+
+Regulation (EU) 2024/1183 amended Regulation (EU) No 910/2014 to create the wallet and the attestation machinery the power of attorney is expected to ride on:
+
+- **The wallet itself.** Each Member State must provide at least one European Digital Identity Wallet within 24 months of the entry into force of the implementing acts under Articles 5a(23) and 5c(6) <Cite id="reg-2024-1183" pin="Art. 5a(1) of Reg. 910/2014 as inserted" />. Those acts — including Implementing Regulations (EU) 2024/2977 and 2024/2981 — were published on 4 December 2024 and entered into force on 24 December 2024, the twentieth day after publication <Cite id="ir-2024-2977" /> <Cite id="ir-2024-2981" />. The deadline is therefore 24 December 2026.
+- **Attestations as cargo.** The wallet must let the user store, share and present person identification data "in combination with electronic attestations of attributes", with selective disclosure, under the user's sole control <Cite id="reg-2024-1183" pin="Art. 5a(4)(a)" />.
+- **Mandates are named cargo.** The recitals say that any service provider issuing attested attributes "such as diplomas, licences, birth certificates or powers and mandates to represent or act on behalf of natural or legal persons" should be considered a trust service provider of electronic attestation of attributes <Cite id="reg-2024-1183" pin="recital 55" />. And Annex VI — the minimum list of attributes Member States must make verifiable against authentic sources — includes "Powers and mandates to represent natural or legal persons" as item 9 <Cite id="reg-2024-1183" pin="Annex VI, point 9" />.
+- **Legal effect.** An electronic attestation of attributes cannot be denied legal effect solely for being electronic; qualified attestations, and attestations issued by or on behalf of a public sector body responsible for an authentic source, have the same legal effect as lawfully issued paper attestations <Cite id="reg-2024-1183" pin="Art. 45b(1)–(2)" />.
+
+The wallet's technical shape — protocols, formats, presentation flows — is specified in the Architecture and Reference Framework, which is documentation, not law, and changes without an OJ publication <Cite id="eudi-arf" />.
+
+## The timeline mismatch, plainly
+
+| Date | What exists | Basis |
+| --- | --- | --- |
+| 24 December 2026 | Member State wallets must be available | Art. 5a(1) of Reg. 910/2014 as amended; implementing acts in force 24.12.2024 |
+| by 31 July 2026 | Commission template for the digital EU power of attorney due | Dir. (EU) 2025/25, Art. 24(2)(e) insertion |
+| 31 July 2028 | Member States apply the power of attorney rules | Dir. (EU) 2025/25, Art. 4(2) |
+
+So for roughly a year and a half, wallets will exist that can technically carry attestations of "powers and mandates" without the company-law instrument being applicable anywhere. What fills that gap — national attestation schemes, early implementations, nothing — is a Member State choice, and this site will record what actually happens rather than predict it.
+
+## What is still unresolved
+
+The precise technical form of the power of attorney inside the wallet — which attestation type, which rulebook, how revocation status is checked at presentation time — depends on the Article 24(2)(e) implementing act and the evolving ARF. As of the last verification of this page, we have not seen an adopted implementing act establishing the template. When it is adopted, this page changes.

@@ -1,0 +1,50 @@
+---
+title: How a digital EU power of attorney is granted
+description: Who can grant a digital EU power of attorney under Directive (EU) 2025/25, who verifies the grantor, and what the template will contain.
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [dir-2025-25, reg-910-2014, reg-2024-1183]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full text of Directive (EU) 2025/25 fetched from EUR-Lex on 2026-08-27.
+---
+
+**A digital EU power of attorney is granted the way national law says it is granted — the Directive harmonises the template, the verification floor, the authentication, and the acceptance, but the act of granting remains a national-law act.** That single design decision explains most of what follows.
+
+## Who this page is for
+
+Company officers who will grant these instruments, the notaries, courts and registers who will verify them, and anyone designing the software path from "a director wants to authorise someone" to "a relying party in another Member State accepts it".
+
+## The grant, step by step, as the law defines it
+
+**Who grants.** A company listed in Annex II or IIB of Directive (EU) 2017/1132 uses the template "to authorise a person to represent the company" in procedures within the scope of that Directive in another Member State — in particular company formation, registration or closure of branches, and cross-border conversions, mergers and divisions <Cite id="dir-2025-25" pin="Art. 16c(1), first subpara." />.
+
+**Under what law.** The instrument "shall be drawn up, amended or revoked in accordance with national requirements" <Cite id="dir-2025-25" pin="Art. 16c(1), second subpara." />. The Directive does not create a European granting procedure. Your national company law does — once transposed.
+
+**The verification floor.** Whatever the national procedure looks like, it must "at least include the verification by courts, notaries or other competent authorities of the identity, legal capacity and authority to represent the company of the person granting, amending or revoking the power of attorney" <Cite id="dir-2025-25" pin="Art. 16c(1), second subpara." />. Three distinct checks, on the grantor — not the attorney: who they are, whether they have capacity, and whether they may bind the company.
+
+**The form.** The instrument exists only digitally: the recitals state it "should only exist in digital form" <Cite id="dir-2025-25" pin="recital 28" />. It must be authenticated by trust services under Regulation (EU) No 910/2014 <Cite id="reg-910-2014" />, and its granting must be compatible for use with the European Digital Identity Wallet <Cite id="reg-2024-1183" />.
+
+**The template.** The Commission establishes the template by implementing act, due by 31 July 2026, with at least three data fields: the scope of representation, the person authorised to represent the company, and the type of representation <Cite id="dir-2025-25" pin="Art. 16c(4) and Art. 24(2)(e)" />. It will be published on the European e-Justice Portal in all official EU languages — the multilingual design is what removes the translation burden <Cite id="dir-2025-25" pin="recital 28" />.
+
+**Optional filing.** Member States may require the instrument (and amendments and revocations) to be filed with a register — the business register or a different one under national law <Cite id="dir-2025-25" pin="Art. 16c(3) and recital 28" />.
+
+## What the grant achieves
+
+Once granted, the instrument "shall be accepted as evidence of the authorised person's entitlement to represent the company as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(2)" /> — and it is exempt from legalisation and any similar formality, including the apostille <Cite id="dir-2025-25" pin="Art. 16d(2)" />.
+
+Note the limit built into the acceptance rule: "as specified in the document". The instrument proves the authority it describes — not more. A power of attorney scoped to registering a branch in one Member State is evidence of exactly that, and a relying party reading it owes attention to the scope field, not just the signature.
+
+## What the law does not settle
+
+- **The actual national procedures.** Which authority verifies, what it costs, how long it takes — all transposition questions, unknown until Member States legislate. Our [transposition table](/poa/member-states) stays at Unknown until we have read the national measures.
+- **Whether notarisation is required.** The verification floor names "courts, notaries or other competent authorities" as alternatives. A Member State could route this through registers or other authorities; nothing in Article 16c forces the notarial path.
+- **The template beyond its three minimum fields.** "At least" means the implementing act can add fields. Until it is adopted, nobody knows the final data model.
+
+## Common confusions
+
+**"The company's legal representative and the attorney are the same thing."** No. The grantor must already hold authority to represent the company (that is what gets verified); the instrument then confers authority on someone else for specific procedures. Who holds original authority is a matter of national company law and the register — see [Who may act for a company](/mandates/who-may-act).
+
+**"Granting it in the wallet makes it valid."** The wallet is a carrier and the compatibility requirement is real, but validity comes from the national granting procedure and its verification steps. A technically well-formed attestation of a badly granted power is still a badly granted power.

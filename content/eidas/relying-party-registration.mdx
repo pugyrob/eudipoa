@@ -1,0 +1,48 @@
+---
+title: Wallet-relying party registration
+description: "The registration regime for relying on EUDI wallets: Article 5b of amended Regulation 910/2014 and Implementing Regulation (EU) 2025/848, applicable from 24 December 2026."
+author: Rob Prime
+published: 2026-08-27
+verified: 2026-08-27
+verified_against: [reg-2024-1183, ir-2025-848]
+review_cycle_days: 30
+changelog:
+  - date: 2026-08-27
+    note: First published, written against the full texts of Regulation (EU) 2024/1183 and IR (EU) 2025/848 fetched from EUR-Lex on 2026-08-27.
+---
+
+**Before a relying party can rely on EUDI wallet presentations, it must register in its Member State of establishment, declare what data it will request and why, and stay within that declaration. Implementing Regulation (EU) 2025/848 builds the machinery — national registers, a common API, access certificates — and applies from 24 December 2026.** For anyone planning to consume wallet-carried mandates, this is the gate.
+
+## Who this page is for
+
+Service providers preparing to accept wallet presentations — including future consumers of the digital EU power of attorney — and the registrars and certificate authorities Member States must stand up.
+
+## The primary-law layer: Article 5b
+
+Regulation (EU) 2024/1183 inserts Article 5b into Regulation (EU) No 910/2014. Its rules, in the instrument's own order:
+
+- **Registration duty.** A relying party intending to rely on wallets "shall register in the Member State where it is established" <Cite id="reg-2024-1183" pin="Art. 5b(1)" />, through a process that is "cost-effective and proportionate-to-risk" <Cite id="reg-2024-1183" pin="Art. 5b(2)" />.
+- **What is declared.** At minimum: the Member State of establishment; name and, where applicable, official registration number; contact details; and "the intended use of European Digital Identity Wallets, including an indication of the data to be requested" <Cite id="reg-2024-1183" pin="Art. 5b(2)" />.
+- **The over-asking ban.** "Relying parties shall not request users to provide any data other than that indicated pursuant to paragraph 2, point (c)" <Cite id="reg-2024-1183" pin="Art. 5b(3)" />.
+- **Transparency.** Member States publish the registration information online, electronically signed or sealed, in a form suitable for automated processing <Cite id="reg-2024-1183" pin="Art. 5b(5)" />.
+- **Identification both ways.** Relying parties must identify themselves to the user <Cite id="reg-2024-1183" pin="Art. 5b(8)" />, and Member States provide a common mechanism for identifying and authenticating relying parties <Cite id="reg-2024-1183" pin="Art. 5b(7)" />.
+- **Responsibility for validation.** Relying parties are responsible for authenticating and validating what they request from wallets, and may not refuse pseudonyms where identification is not legally required <Cite id="reg-2024-1183" pin="Art. 5b(9)" />.
+- **Intermediaries are relying parties.** Intermediaries acting on behalf of relying parties are deemed relying parties and must not store transaction-content data <Cite id="reg-2024-1183" pin="Art. 5b(10)" />.
+
+## The implementing layer: IR (EU) 2025/848
+
+Commission Implementing Regulation (EU) 2025/848 of 6 May 2025 lays down the rules for registration of wallet-relying parties <Cite id="ir-2025-848" pin="Art. 1" />. The build-out it requires:
+
+- **National registers.** At least one per Member State, holding at least the Annex I information, publicly available online in human-readable form and machine-processable form, served through "a single common application programming interface" and a national website, signed or sealed by the registrar <Cite id="ir-2025-848" pin="Art. 3(1)–(5)" />.
+- **Registration policies.** Published national registration policies, which may reuse existing sectoral policies <Cite id="ir-2025-848" pin="Art. 4(1)–(2)" />.
+- **Accuracy duties on relying parties.** Provide at least the Annex I information; keep it accurate; update without undue delay <Cite id="ir-2025-848" pin="Art. 5(1)–(3)" />.
+- **Easy processes.** Electronic and, where possible, automated registration processes <Cite id="ir-2025-848" pin="Art. 6(1)" />.
+- **Access certificates.** At least one authorised certificate authority per Member State issuing wallet-relying party access certificates — and only to registered relying parties <Cite id="ir-2025-848" pin="Art. 7(1)–(2)" />. A defined term: the access certificate authenticates and validates the relying party <Cite id="ir-2025-848" pin="Art. 2" />.
+- **Registration certificates (optional).** Member States may authorise certificate authorities to issue wallet-relying party registration certificates — data objects describing the relying party's intended use and registered attribute requests <Cite id="ir-2025-848" pin="Art. 8(1) and Art. 2" />.
+- **Suspension and cancellation.** Registrars must suspend or cancel on supervisory-body request, and may act on their own reasoned grounds <Cite id="ir-2025-848" pin="Art. 9(1)–(2)" />.
+
+**Application date: 24 December 2026** <Cite id="ir-2025-848" pin="Art. 11" /> — the same day the Member State wallet obligation matures. See [the wallet page](/poa/wallet) for that calculation.
+
+## What this means for mandate consumers
+
+If your service will verify organisational authority via wallet presentations — including, eventually, the digital EU power of attorney — then by design you will be: registered in a public, machine-readable national register; holding an access certificate that names you to wallets; and bound to request only the data you declared. Plan the declaration carefully: the over-asking ban is not a courtesy notice, it is Article 5b(3), and your registered intended use is public infrastructure other people's software will read.

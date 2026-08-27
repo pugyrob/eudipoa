@@ -93,7 +93,9 @@ sources:
     adopted: 2024-04-11
     published: 2024-04-30
     last_retrieved: 2026-08-27
-    retrieved_via: "EUR-Lex ELI page fetched in a real browser."
+    retrieved_via: >-
+      EUR-Lex full text fetched in a real browser and saved to
+      content/sources/raw/reg-2024-1183.txt.
     review_cycle_days: 30
 
   - id: ir-2025-848
@@ -111,7 +113,67 @@ sources:
     adopted: 2025-05-06
     published: 2025-05-07
     last_retrieved: 2026-08-27
-    retrieved_via: "EUR-Lex ELI page fetched in a real browser."
+    retrieved_via: >-
+      EUR-Lex full text fetched in a real browser and saved to
+      content/sources/raw/ir-2025-848.txt.
+    review_cycle_days: 30
+
+  - id: ir-2024-2977
+    type: law
+    status: in-force
+    title: >-
+      Commission Implementing Regulation (EU) 2024/2977 of 28 November 2024
+      laying down rules for the application of Regulation (EU) No 910/2014 of
+      the European Parliament and of the Council as regards person
+      identification data and electronic attestations of attributes issued to
+      European Digital Identity Wallets
+    short: "Implementing Regulation (EU) 2024/2977"
+    eli: "http://data.europa.eu/eli/reg_impl/2024/2977/oj"
+    url: "https://eur-lex.europa.eu/eli/reg_impl/2024/2977/oj"
+    oj: "OJ L, 2024/2977, 4.12.2024"
+    adopted: 2024-11-28
+    published: 2024-12-04
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      EUR-Lex ELI page fetched in a real browser; title, OJ reference and
+      entry-into-force clause read from the page.
+    review_cycle_days: 90
+
+  - id: ir-2024-2981
+    type: law
+    status: in-force
+    title: >-
+      Commission Implementing Regulation (EU) 2024/2981 of 28 November 2024
+      laying down rules for the application of Regulation (EU) No 910/2014 of
+      the European Parliament and the Council as regards the certification of
+      European Digital Identity Wallets
+    short: "Implementing Regulation (EU) 2024/2981"
+    eli: "http://data.europa.eu/eli/reg_impl/2024/2981/oj"
+    url: "https://eur-lex.europa.eu/eli/reg_impl/2024/2981/oj"
+    oj: "OJ L, 2024/2981, 4.12.2024"
+    adopted: 2024-11-28
+    published: 2024-12-04
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      EUR-Lex ELI page fetched in a real browser; title, OJ reference and
+      entry-into-force clause read from the page.
+    review_cycle_days: 90
+
+  - id: oeil-2025-0358
+    type: proposal
+    status: awaiting-committee-decision
+    title: >-
+      European Parliament Legislative Observatory (OEIL), procedure
+      2025/0358(COD) — Establishment of European Business Wallets
+      (COM(2025)0838)
+    short: "OEIL 2025/0358(COD) (PROPOSAL)"
+    url: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0358(COD)"
+    publisher: "European Parliament"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      OEIL procedure file fetched directly. Status on that date: "Awaiting
+      committee decision"; proposal COM(2025)0838 published 19.11.2025;
+      committee ITRE. This tracks a proposal, not law.
     review_cycle_days: 30
 
   - id: eudi-arf

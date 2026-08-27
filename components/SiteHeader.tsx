@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const NAV = [
   { href: "/poa", label: "Power of attorney" },
+  { href: "/certificate", label: "Certificate" },
+  { href: "/mandates", label: "Mandates" },
+  { href: "/eidas/attestation-of-attributes", label: "eIDAS" },
+  { href: "/glossary", label: "Glossary" },
   { href: "/about", label: "About" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/sources", label: "Sources" },
 ];
 
 export default function SiteHeader() {

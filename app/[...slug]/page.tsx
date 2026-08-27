@@ -33,9 +33,40 @@ export default async function HandbookPage({
   const page = getPage(slug);
   if (!page) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: page.meta.title,
+    description: page.meta.description,
+    datePublished: page.meta.published,
+    dateModified: page.meta.verified,
+    inLanguage: "en-GB",
+    author: {
+      "@type": "Person",
+      name: page.meta.author,
+      url: "https://eudipoa.com/authors/rob-prime",
+    },
+  };
+
   return (
     <article className="prose measure">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1>{page.meta.title}</h1>
+      {page.meta.kind === "implementation-note" ? (
+        <p className="kind-banner kind-banner--note">
+          Implementation note — engineering experience from building against
+          these rules. This page describes practice, not law.
+        </p>
+      ) : null}
+      {page.meta.kind === "proposal-tracker" ? (
+        <p className="kind-banner kind-banner--proposal">
+          Proposal — the instrument this page describes is not adopted law. It
+          can change or fail entirely.
+        </p>
+      ) : null}
       <VerificationBox meta={page.meta} />
       <MDXRemote
         source={page.body}

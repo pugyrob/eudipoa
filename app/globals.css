@@ -143,6 +143,22 @@ h3 {
   background: var(--ink);
 }
 
+.kind-banner {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid;
+  margin: 1rem 0;
+}
+.kind-banner--note {
+  border-color: var(--chip-note);
+  background: color-mix(in srgb, var(--chip-note) 8%, var(--paper));
+}
+.kind-banner--proposal {
+  border-color: var(--chip-proposal);
+  background: color-mix(in srgb, var(--chip-proposal) 10%, var(--paper));
+}
+
 .verification {
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.85rem;

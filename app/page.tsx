@@ -46,6 +46,55 @@ export default function Home() {
         </li>
       </ul>
 
+      <h2>Then go deeper</h2>
+      <ul>
+        <li>
+          <Link href="/poa/how-it-is-granted">How it is granted</Link> and{" "}
+          <Link href="/poa/revocation">how it is revoked</Link> — the national
+          verification floor, and the revocation-visibility problem the law
+          leaves open.
+        </li>
+        <li>
+          <Link href="/poa/wallet">The wallet mapping</Link> — how the
+          instrument rides the EUDI wallet, and why the two run on different
+          clocks.
+        </li>
+        <li>
+          <Link href="/certificate">The EU Company Certificate</Link> — the
+          other instrument in the Directive: what a company is, register-grade
+          and apostille-free.
+        </li>
+        <li>
+          <Link href="/mandates">Organisational mandates</Link> — who may act
+          for a company, what relying parties must do, and two implementation
+          notes from building on these rules.
+        </li>
+        <li>
+          <Link href="/eidas/attestation-of-attributes">
+            The eIDAS 2 layer
+          </Link>{" "}
+          — attestations of attributes,{" "}
+          <Link href="/eidas/relying-party-registration">
+            relying-party registration
+          </Link>
+          , and the{" "}
+          <Link href="/eidas/business-wallets">
+            Business Wallet proposal
+          </Link>{" "}
+          (which is a proposal, and labelled as one).
+        </li>
+        <li>
+          <Link href="/poa/member-states">
+            Transposition, all 27 Member States
+          </Link>{" "}
+          — every row Unknown until we have read that country&rsquo;s gazette.
+        </li>
+        <li>
+          <Link href="/glossary">Glossary</Link> — the terms, defined from the
+          instruments.
+        </li>
+      </ul>
+
       <h2>Where the law stands</h2>
       <table>
         <thead>
@@ -89,10 +138,11 @@ export default function Home() {
       <p>
         Full detail, including the later dates for group-of-companies
         information, is on the{" "}
-        <Link href="/poa/directive-2025-25">Directive 2025/25 page</Link>. A
-        27-country transposition table is in preparation; each row will read
-        “Unknown” until we have opened that country&rsquo;s official gazette,
-        because a table filled from press releases is worse than no table.
+        <Link href="/poa/directive-2025-25">Directive 2025/25 page</Link>. The{" "}
+        <Link href="/poa/member-states">27-country transposition table</Link>{" "}
+        currently reads “Unknown” in every row — we have not yet verified any
+        national measure in an official gazette, and a table filled from press
+        releases is worse than no table.
       </p>
 
       <h2>How this site earns trust</h2>

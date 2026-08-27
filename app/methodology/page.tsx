@@ -21,8 +21,11 @@ export default function Methodology() {
       <h2>The source registry</h2>
       <p>
         The site keeps a single registry of sources
-        (<code>content/sources/registry.yaml</code> in the site&rsquo;s public
-        repository). Each entry records the instrument&rsquo;s full title, its
+        (<code>content/sources/registry.yaml</code> in the site&rsquo;s{" "}
+        <a href="https://github.com/pugyrob/eudipoa" rel="noopener">
+          public repository
+        </a>
+        ). Each entry records the instrument&rsquo;s full title, its
         ELI identifier, the canonical URL, its Official Journal reference, and
         the date we last retrieved it. Inline citations resolve against this
         registry; a citation to an unregistered source fails the site&rsquo;s
