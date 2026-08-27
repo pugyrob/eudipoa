@@ -1,0 +1,145 @@
+# EUDIPOA source registry.
+# Every <Cite id="..."/> in content and every frontmatter `verified_against` entry
+# must resolve to an id in this file. CI (scripts/verify-sources.mjs) enforces this.
+#
+# type: law | proposal | technical-draft | implementation-note | commentary
+# All dates below were read from the source itself on the `last_retrieved` date,
+# not from secondary commentary.
+
+sources:
+  - id: dir-2025-25
+    type: law
+    status: in-force
+    title: >-
+      Directive (EU) 2025/25 of the European Parliament and of the Council of
+      19 December 2024 amending Directives 2009/102/EC and (EU) 2017/1132 as
+      regards further expanding and upgrading the use of digital tools and
+      processes in company law
+    short: "Directive (EU) 2025/25"
+    eli: "http://data.europa.eu/eli/dir/2025/25/oj"
+    url: "https://eur-lex.europa.eu/eli/dir/2025/25/oj"
+    oj: "OJ L, 2025/25, 10.1.2025"
+    adopted: 2024-12-19
+    published: 2025-01-10
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      EUR-Lex ELI page fetched in a real browser (EUR-Lex blocks plain HTTP
+      clients with HTTP 202). Full text saved to content/sources/raw/dir-2025-25.txt.
+    review_cycle_days: 30
+
+  - id: dir-2017-1132
+    type: law
+    status: in-force
+    title: >-
+      Directive (EU) 2017/1132 of the European Parliament and of the Council of
+      14 June 2017 relating to certain aspects of company law
+    short: "Directive (EU) 2017/1132"
+    eli: "http://data.europa.eu/eli/dir/2017/1132/oj"
+    url: "https://eur-lex.europa.eu/eli/dir/2017/1132/oj"
+    oj: "OJ L 169, 30.6.2017, p. 46"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      Citation taken from footnote (3) of Directive (EU) 2025/25 as fetched from
+      EUR-Lex on the last_retrieved date. The consolidated text itself has not
+      yet been fetched by this site.
+    review_cycle_days: 90
+
+  - id: dir-2009-102
+    type: law
+    status: in-force
+    title: >-
+      Directive 2009/102/EC of the European Parliament and of the Council of
+      16 September 2009 in the area of company law on single-member private
+      limited liability companies
+    short: "Directive 2009/102/EC"
+    eli: "http://data.europa.eu/eli/dir/2009/102/oj"
+    url: "https://eur-lex.europa.eu/eli/dir/2009/102/oj"
+    oj: "OJ L 258, 1.10.2009, p. 20"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      Citation taken from footnote (23) of Directive (EU) 2025/25 as fetched
+      from EUR-Lex on the last_retrieved date.
+    review_cycle_days: 90
+
+  - id: reg-910-2014
+    type: law
+    status: in-force
+    title: >-
+      Regulation (EU) No 910/2014 of the European Parliament and of the Council
+      of 23 July 2014 on electronic identification and trust services for
+      electronic transactions in the internal market and repealing Directive
+      1999/93/EC
+    short: "Regulation (EU) No 910/2014 (eIDAS)"
+    eli: "http://data.europa.eu/eli/reg/2014/910/oj"
+    url: "https://eur-lex.europa.eu/eli/reg/2014/910/oj"
+    oj: "OJ L 257, 28.8.2014, p. 73"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      Citation taken from footnote (11) of Directive (EU) 2025/25 as fetched
+      from EUR-Lex on the last_retrieved date.
+    review_cycle_days: 90
+
+  - id: reg-2024-1183
+    type: law
+    status: in-force
+    title: >-
+      Regulation (EU) 2024/1183 of the European Parliament and of the Council of
+      11 April 2024 amending Regulation (EU) No 910/2014 as regards establishing
+      the European Digital Identity Framework
+    short: "Regulation (EU) 2024/1183 (eIDAS 2)"
+    eli: "http://data.europa.eu/eli/reg/2024/1183/oj"
+    url: "https://eur-lex.europa.eu/eli/reg/2024/1183/oj"
+    oj: "OJ L, 2024/1183, 30.4.2024"
+    adopted: 2024-04-11
+    published: 2024-04-30
+    last_retrieved: 2026-08-27
+    retrieved_via: "EUR-Lex ELI page fetched in a real browser."
+    review_cycle_days: 30
+
+  - id: ir-2025-848
+    type: law
+    status: in-force
+    title: >-
+      Commission Implementing Regulation (EU) 2025/848 of 6 May 2025 laying down
+      rules for the application of Regulation (EU) No 910/2014 of the European
+      Parliament and of the Council as regards the registration of
+      wallet-relying parties
+    short: "Implementing Regulation (EU) 2025/848"
+    eli: "http://data.europa.eu/eli/reg_impl/2025/848/oj"
+    url: "https://eur-lex.europa.eu/eli/reg_impl/2025/848/oj"
+    oj: "OJ L, 2025/848, 7.5.2025"
+    adopted: 2025-05-06
+    published: 2025-05-07
+    last_retrieved: 2026-08-27
+    retrieved_via: "EUR-Lex ELI page fetched in a real browser."
+    review_cycle_days: 30
+
+  - id: eudi-arf
+    type: technical-draft
+    status: living-document
+    title: >-
+      European Digital Identity Wallet — Architecture and Reference Framework
+      (ARF)
+    short: "EUDI Wallet ARF"
+    url: "https://eudi.dev/"
+    publisher: "European Commission"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      eudi.dev fetched directly. The ARF is technical documentation, not law;
+      it changes without an OJ publication.
+    review_cycle_days: 30
+
+  - id: business-wallets-proposal
+    type: proposal
+    status: proposal
+    title: >-
+      European Business Wallet — Commission proposal (European Commission
+      digital strategy policy page)
+    short: "EU Business Wallet (PROPOSAL)"
+    url: "https://digital-strategy.ec.europa.eu/en/policies/business-wallets"
+    publisher: "European Commission"
+    last_retrieved: 2026-08-27
+    retrieved_via: >-
+      Commission policy page fetched directly. The page describes a proposal
+      for a regulation; it is not adopted law and may change or fail.
+    review_cycle_days: 30

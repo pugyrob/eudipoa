@@ -1,0 +1,63 @@
+name: verify-sources
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Monday 07:00 UTC — weekly source pass.
+    - cron: "0 7 * * 1"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Verify citations and sources (fails on 404 cites)
+        run: pnpm verify-sources:network
+      - name: Build
+        run: pnpm build
+
+  weekly-source-pass:
+    # The Monday cron opens an issue for a human-supervised source pass.
+    # It never rewrites legal content automatically.
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().slice(0, 10);
+            const title = `Weekly source pass — ${date}`;
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "source-pass",
+            });
+            if (existing.some(i => i.title === title)) return;
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title,
+              labels: ["source-pass"],
+              body: [
+                "Weekly source pass. For each registry entry:",
+                "",
+                "- [ ] Re-fetch Directive (EU) 2025/25 (EUR-Lex) — any corrigendum or consolidated version?",
+                "- [ ] Re-fetch Regulation (EU) 2024/1183 and IR (EU) 2025/848 (EUR-Lex)",
+                "- [ ] Check eudi.dev (ARF) for a new release",
+                "- [ ] Check the Business Wallets policy page — still a proposal?",
+                "- [ ] Check OEIL procedure 2025/0358 for movement",
+                "",
+                "If an instrument did not change: bump `last_retrieved` (and `verified` on pages re-checked).",
+                "If it did change: edit the affected MDX and record what changed in the law in the page changelog.",
+                "See AGENTS.md for the full procedure.",
+              ].join("\n"),
+            });
