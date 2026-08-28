@@ -5,7 +5,7 @@ import { allPages } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Updates",
   description:
-    "Dated briefs on developments in the digital EU power of attorney landscape — implementing acts, transpositions, proposals — written from the sources as they change.",
+    "Dated briefs on developments in the digital EU power of attorney landscape: implementing acts, transpositions, proposals. Written from the sources as they change.",
 };
 
 export default function Updates() {
@@ -19,13 +19,11 @@ export default function Updates() {
         <p className="kicker">Updates</p>
         <h1>Developments, as they happen</h1>
         <p className="standfirst">
-          Dated briefs on what has actually changed — an implementing act
+          Dated briefs on what has actually changed: an implementing act
           adopted, a Member State transposing, a proposal moving. Each brief is
           verified against its sources like every other page here. The weekly
-          source pass keeps this current; if nothing moved, nothing is
-          published, because manufacturing news is how sites stop being
-          trustworthy. Also available as{" "}
-          <a href="/feed.xml">an RSS feed</a>.
+          source pass keeps this current. If nothing moved, nothing is
+          published. Also available as <a href="/feed.xml">an RSS feed</a>.
         </p>
       </header>
       {updates.length === 0 ? (

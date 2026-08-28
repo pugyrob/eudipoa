@@ -22,6 +22,18 @@ site's credibility is its only asset. These rules are not style preferences.
    no fake quotes, no invented endorsements.
 5. **UK English. No hype.** Forbidden words: seamless, unlock, leverage,
    "experts agree".
+6. **Rob's voice, not AI voice (added 2026-08-28, from Rob's sent mail).**
+   Plain declaratives. Say the thing; never announce you are about to say it.
+   Banned patterns: "the honest version / honestly", "in plain terms",
+   "plainly", "Note that", "crucially", "the striking detail", "worth
+   stating", aphorism kickers ("X beats Y"), cute metaphors (cargo, rails,
+   plumbing, blast radius, moat, deep end), personified law ("the Directive
+   is blunt"), summary-of-the-sentence-you-just-wrote. Use em-dashes rarely,
+   not as a rhythm. Short sentences, concrete specifics, mechanism explained
+   in cause and effect ("Your browser had already downloaded that address,
+   so it handed you the saved copy"). Direct verdicts are fine ("No.",
+   "Not yet.", "Nothing on your side to fix"). Technical stays technical;
+   it just doesn't perform.
 
 ## Fetching EUR-Lex
 

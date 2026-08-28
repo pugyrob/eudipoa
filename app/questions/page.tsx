@@ -302,9 +302,8 @@ export default function Questions() {
         <h1>Your question, answered simply — and cited</h1>
         <p className="standfirst">
           The questions people actually search for, answered in plain English
-          first, with the article numbers attached so you can check us. When an
-          answer depends on a date that has not arrived, we say "not yet" —
-          not "soon".
+          with the article numbers attached so you can check us. When an
+          answer depends on a date that has not arrived, we say not yet.
         </p>
       </header>
       <ul>

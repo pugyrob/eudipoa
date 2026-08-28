@@ -41,8 +41,8 @@ export default function Corrections() {
       <h2>Correction log</h2>
       {corrections.length === 0 ? (
         <p>
-          No corrections recorded yet. This site was first published on 27
-          August 2026; the log starts empty and stays honest.
+          No corrections recorded yet. The site was first published on 27
+          August 2026.
         </p>
       ) : (
         <ul>

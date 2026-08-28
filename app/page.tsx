@@ -41,21 +41,21 @@ const START_CARDS = [
   },
   {
     href: "/mandates",
-    label: "The deep end",
+    label: "Who may act",
     title: "Organisational mandates",
     desc: "Who may act for a company, what relying parties must do, and notes from building on these rules.",
   },
   {
     href: "/eidas/attestation-of-attributes",
-    label: "The rails",
+    label: "eIDAS 2",
     title: "The eIDAS 2 layer",
-    desc: "Wallets, attestations of attributes, relying-party registration — and the Business Wallet proposal, labelled as one.",
+    desc: "Wallets, attestations of attributes, relying-party registration, and the Business Wallet proposal, labelled as one.",
   },
   {
     href: "/poa/member-states",
     label: "Country by country",
     title: "Transposition, all 27 Member States",
-    desc: "Every row Unknown until we have read that country's gazette. Honest beats fast.",
+    desc: "Notified measures tracked weekly; no row is marked verified until we have read that country's gazette.",
   },
 ];
 
@@ -77,24 +77,23 @@ export default function Home() {
   return (
     <div>
       <div className="hero measure">
-        <p className="kicker">The record, kept honestly</p>
+        <p className="kicker">Independent record · verified weekly</p>
         <h1>The digital EU power of attorney, explained from the instrument</h1>
         <p className="standfirst">
           Directive (EU) 2025/25 creates a digital power of attorney and a
-          company certificate that work across all 27 Member States — no
-          apostilles, no translation rounds. This handbook explains what the
-          law actually says, article by article, with every claim cited to the
-          text it comes from. Where something is unknown, we say so.
+          company certificate that work across all 27 Member States, with no
+          apostilles and no translation rounds. This handbook explains what
+          the law actually says, article by article, with every claim cited to
+          the text it comes from. Where something is unknown, we say so.
         </p>
       </div>
 
       <div className="prose measure">
         <p>
-          There are plenty of sites explaining the EUDI wallet in general. This
-          is not one of them. EUDIPOA covers one thing deeply: how
-          organisations authorise people — and increasingly systems — to act
-          for them under the new EU rules{" "}
-          <Cite id="dir-2025-25" pin="Art. 2" />{" "}
+          There are plenty of sites explaining the EUDI wallet in general.
+          This is not one of them. EUDIPOA covers one thing in depth: how
+          organisations authorise people, and increasingly systems, to act for
+          them under the new EU rules <Cite id="dir-2025-25" pin="Art. 2" />{" "}
           <Cite id="reg-2024-1183" />, and what companies, notaries, registers
           and relying parties have to do about it.
         </p>
@@ -155,9 +154,9 @@ export default function Home() {
           date, the exact sources it was verified against (with retrieval
           dates), and a changelog. Claims are labelled <em>Law</em>,{" "}
           <em>Proposal</em>, <em>Technical draft</em>,{" "}
-          <em>Implementation note</em> or <em>Commentary</em> — because a
-          Commission policy page is not law, and pretending otherwise is how
-          bad advice spreads. The method is public:{" "}
+          <em>Implementation note</em> or <em>Commentary</em>, because a
+          Commission policy page is not law and should never read as if it
+          were. The method is public:{" "}
           <Link href="/methodology">Methodology</Link>. The mistakes are too:{" "}
           <Link href="/corrections">Corrections</Link>.
         </p>

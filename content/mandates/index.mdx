@@ -11,7 +11,7 @@ changelog:
     note: First published, written against the full texts of Directive (EU) 2025/25 and Regulation (EU) 2024/1183 fetched from EUR-Lex on 2026-08-27.
 ---
 
-**A mandate is the answer to the question every counterparty eventually asks: on what basis is this person acting for that organisation?** EU law now gives that question digital infrastructure from three directions at once — register-published representation, a harmonised cross-border power of attorney, and wallet-carried attestations of authority — and this section maps how the pieces relate.
+**A mandate answers the question every counterparty eventually asks: on what basis is this person acting for that organisation?** EU law now gives that question digital infrastructure from three directions at once: register-published representation, a harmonised cross-border power of attorney, and wallet-carried attestations of authority. This section maps how the pieces relate.
 
 ## Who this section is for
 
@@ -19,22 +19,22 @@ Anyone who has to decide whether a person (or a system) genuinely acts for an or
 
 ## The three layers
 
-**1. Original authority: who may bind the company.** Every company has persons authorised to represent it "in dealings with third parties and in legal proceedings" — a matter of national company law, disclosed in business registers, and now stated cross-border in the [EU Company Certificate](/certificate), including whether representatives act alone or jointly <Cite id="dir-2025-25" pin="Art. 16b(2)(j)" />. Covered in [Who may act for a company](/mandates/who-may-act).
+**1. Original authority: who may bind the company.** Every company has persons authorised to represent it "in dealings with third parties and in legal proceedings". That is a matter of national company law, disclosed in business registers, and now stated cross-border in the [EU Company Certificate](/certificate), including whether representatives act alone or jointly <Cite id="dir-2025-25" pin="Art. 16b(2)(j)" />. Covered in [Who may act for a company](/mandates/who-may-act).
 
-**2. Conferred authority: the power of attorney.** Original representatives can authorise someone else for specific procedures. For cross-border company-law procedures, Directive (EU) 2025/25 harmonises that instrument as the [digital EU power of attorney](/poa) — granted under national requirements, verified by courts, notaries or competent authorities, and accepted as evidence of authority "as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(1)–(2)" />.
+**2. Conferred authority: the power of attorney.** Original representatives can authorise someone else for specific procedures. For cross-border company-law procedures, Directive (EU) 2025/25 harmonises that instrument as the [digital EU power of attorney](/poa): granted under national requirements, verified by courts, notaries or competent authorities, and accepted as evidence of authority "as specified in the document" <Cite id="dir-2025-25" pin="Art. 16c(1)–(2)" />.
 
-**3. Attested authority: mandates as wallet cargo.** The eIDAS 2 framework treats "powers and mandates to represent or act on behalf of natural or legal persons" as attributes that trust service providers can attest electronically <Cite id="reg-2024-1183" pin="recital 55" />, and puts "Powers and mandates to represent natural or legal persons" on the minimum list of attributes Member States must make verifiable against authentic sources <Cite id="reg-2024-1183" pin="Annex VI, point 9" />. What relying parties must do with wallet-presented evidence is covered in [Relying parties](/mandates/relying-parties) and [Relying-party registration](/eidas/relying-party-registration).
+**3. Attested authority: mandates in the wallet.** The eIDAS 2 framework treats "powers and mandates to represent or act on behalf of natural or legal persons" as attributes that trust service providers can attest electronically <Cite id="reg-2024-1183" pin="recital 55" />, and puts "Powers and mandates to represent natural or legal persons" on the minimum list of attributes Member States must make verifiable against authentic sources <Cite id="reg-2024-1183" pin="Annex VI, point 9" />. What relying parties must do with wallet-presented evidence is covered in [Relying parties](/mandates/relying-parties) and [Relying-party registration](/eidas/relying-party-registration).
 
 ## Where it gets hard
 
-The law defines instruments; operating them raises questions the instruments do not answer — how scope is checked at the moment of action, how revocation reaches the relying party in time, and what happens when software rather than a person is doing the acting. Two pages in this section are implementation notes — labelled engineering experience, not law:
+The law defines instruments. Operating them raises questions the instruments do not answer: how scope is checked at the moment of action, how revocation reaches the relying party in time, and what happens when software rather than a person is doing the acting. Two pages in this section are implementation notes, labelled as engineering experience rather than law:
 
-- [The mandate object](/mandates/mandate-object) — what a mandate has to look like as data before any of the checks can be automated.
-- [Agents and systems acting under mandates](/mandates/agents) — why a valid token is not the same thing as an allowed action.
+- [The mandate object](/mandates/mandate-object): what a mandate has to look like as data before any of the checks can be automated.
+- [Agents and systems acting under mandates](/mandates/agents): why a valid token is not the same thing as an allowed action.
 
 ## In this section
 
 - [Who may act for a company](/mandates/who-may-act)
 - [Relying parties](/mandates/relying-parties)
-- [The mandate object](/mandates/mandate-object) — implementation note
-- [Agents and systems acting under mandates](/mandates/agents) — implementation note
+- [The mandate object](/mandates/mandate-object) (implementation note)
+- [Agents and systems acting under mandates](/mandates/agents) (implementation note)

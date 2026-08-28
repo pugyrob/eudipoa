@@ -1,6 +1,6 @@
 ---
 title: The mandate object
-description: An implementation note on modelling organisational authority as data — the fields a mandate needs before any legal check can be automated.
+description: An implementation note on modelling organisational authority as data, and the fields a mandate needs before any legal check can be automated.
 author: Rob Prime
 published: 2026-08-27
 verified: 2026-08-27
@@ -12,11 +12,11 @@ changelog:
     note: First published. Implementation note distilled from building Mandate Rail; legal anchors cited where they exist.
 ---
 
-**Before you can automate "may this person do this thing for that company", you need the authority itself as a first-class data object — not a PDF, not a boolean on a user record, but a mandate with a grantor, a grantee, a scope, a type, a validity window and a status.** This page describes the shape we use in practice. It is an engineering note; where the law fixes a field, we cite it, and everywhere else this is experience, not obligation.
+**Before you can automate "may this person do this thing for that company", you need the authority itself as data. Not a PDF, not a boolean on a user record: a mandate with a grantor, a grantee, a scope, a type, a validity window and a status.** This page describes the shape we use in practice. Where the law fixes a field, we cite it. Everywhere else this is experience, not obligation.
 
 ## Why a document is not enough
 
-A power of attorney as a signed document answers yesterday's question — was this granted properly? Operations ask a different question, repeatedly: is this action, by this person, for this company, allowed **now**? To answer that at machine speed you need the document's content lifted into structure. The EU legislator, usefully, has already committed to a minimum structure: the template for the digital EU power of attorney must contain "at least the data fields relating to the scope of representation, the person authorised to represent the company and the type of representation" <Cite id="dir-2025-25" pin="Art. 16c(4)" />. Those three fields are the seed of the mandate object.
+A signed power of attorney answers one question: was this granted properly? Operations ask a different question, repeatedly: is this action, by this person, for this company, allowed **now**? To answer that at machine speed the document's content has to become structure. The law already commits to a minimum structure: the template for the digital EU power of attorney must contain "at least the data fields relating to the scope of representation, the person authorised to represent the company and the type of representation" <Cite id="dir-2025-25" pin="Art. 16c(4)" />. Those three fields are the start of the mandate object.
 
 ## The fields, and where they come from
 
@@ -30,12 +30,12 @@ A power of attorney as a signed document answers yesterday's question — was th
 | Status + lifecycle events | Granted, amended, revoked — each a verified national-law act | <Cite id="dir-2025-25" pin="Art. 16c(1) and (3)" /> |
 | Evidence trail | Which authority verified, when; where filed, if filed | Filing option in <Cite id="dir-2025-25" pin="Art. 16c(3)" /> |
 
-Two practice-driven additions the law does not mandate but reality does: a **validity window** (open-ended mandates accumulate risk; short-lived, renewable ones bound it) and a **constraint set** on the scope (value limits, counterparty limits, procedure limits). Both exist because scope prose that a human reads once is not the same thing as scope structure a system checks every time.
+Two additions the law does not require but practice does: a **validity window** (open-ended mandates accumulate risk; short-lived, renewable ones bound it) and a **constraint set** on the scope (value limits, counterparty limits, procedure limits). Scope written as prose gets read once by a human. Scope written as structure gets checked by a system every time.
 
 ## Lifecycle, not lookup
 
-The costly modelling mistake is treating authority as a lookup table — `is_authorised: true`. Authority is a lifecycle: granted by someone whose own authority was checked, possibly amended, possibly revoked, with the revocation valid "from the moment of its revocation" and irreversible where the qualified-attestation rule applies <Cite id="reg-2024-1183" pin="Art. 45d(4) of Reg. 910/2014 as inserted" />. A mandate object therefore needs its history attached — you will be asked not only "may they act?" but "were they allowed to act on the 14th of March?", and only the event log answers that.
+The expensive modelling mistake is treating authority as a lookup: `is_authorised: true`. Authority is a lifecycle. It is granted by someone whose own authority was checked, possibly amended, possibly revoked, and where the qualified-attestation rule applies the revocation is valid "from the moment of its revocation" and irreversible <Cite id="reg-2024-1183" pin="Art. 45d(4) of Reg. 910/2014 as inserted" />. A mandate object needs its history attached, because you will be asked not only "may they act?" but "were they allowed to act on 14 March?". Only the event log answers that.
 
 ## What this buys you when the law arrives
 
-When the Commission's template lands (due by 31 July 2026 <Cite id="dir-2025-25" pin="Art. 24(2)(e)" />) and wallets begin carrying attestations of "powers and mandates to represent natural or legal persons" <Cite id="reg-2024-1183" pin="Annex VI, point 9" />, systems that already hold mandates as structured objects can consume the attestation as evidence feeding an existing model. Systems that hold PDFs will be parsing prose under deadline. That, in one sentence, is why we model it this way.
+When the Commission's template is published (it was due by 31 July 2026 <Cite id="dir-2025-25" pin="Art. 24(2)(e)" />) and wallets start carrying attestations of "powers and mandates to represent natural or legal persons" <Cite id="reg-2024-1183" pin="Annex VI, point 9" />, systems that already hold mandates as structured records can take the attestation as evidence into an existing model. Systems that hold PDFs will be parsing prose against a deadline.
