@@ -41,3 +41,31 @@ OJ publication (10.1.2025) except none — the newest is 19.6.2024. Czechia has
 therefore notified EXISTING legislation as covering the Directive, not enacted
 a new transposing act. We have not read any of these acts in the Sbírka zákonů;
 this file records the notification only.
+
+--------------------------------------------------------------------
+RE-CHECK 2026-09-03 (real browser, same URL, Czechia block expanded)
+--------------------------------------------------------------------
+Unchanged: Czechia 14 measures (transposition deadline shown 31/07/2027);
+all 26 other Member States 0. Full titles as displayed (the page labels the
+Czech list MACHINE TRANSLATION; every entry shows official publication
+"Sbirka Zakonu CR" and "Translation failed", so only the Czech titles are
+available):
+
+ 1. Zakon Ceske narodni rady c. 358/1992 Sb., o notarich a jejich cinnosti (notarsky rad) - 1992-07-07
+ 2. Zakon c. 40/2009 Sb., trestni zakonik - 2009-02-09
+ 3. Zakon c. 89/2012 Sb., obcansky zakonik - 2012-03-22
+ 4. Zakon c. 90/2012 Sb., o obchodnich spolecnostech a druzstvech (zakon o obchodnich korporacich) - 2012-03-22
+ 5. Zakon c. 304/2013 Sb., o verejnych rejstricich pravnickych a fyzickych osob - 2013-09-30
+ 6. Zakon c. 192/2016 Sb., kterym se meni zakon c. 111/2009 Sb., o zakladnich registrech, ve zneni pozdejsich predpisu, a nektere dalsi zakony - 2016-06-17
+ 7. Zakon c. 251/2016 Sb., o nekterych prestupcich - 2016-08-03
+ 8. Zakon c. 460/2016 Sb., kterym se meni zakon c. 89/2012 Sb., obcansky zakonik, a dalsi souvisejici zakony - 2016-12-30
+ 9. Zakon c. 33/2020 Sb., kterym se meni zakon c. 90/2012 Sb., o obchodnich korporacich, ve zneni zakona c. 458/2016 Sb., a dalsi souvisejici zakony - 2020-02-13
+10. Zakon c. 527/2020 Sb., kterym se meni zakon c. 253/2008 Sb., o nekterych opatrenich proti legalizaci vynosu z trestne cinnosti a financovani terorismu ... a zakon c. 186/2016 Sb., o hazardnich hrach - 2020-12-17
+11. Zakon c. 300/2021 Sb., kterym se meni zakon c. 358/1992 Sb., notarsky rad, a zakon c. 634/2004 Sb., o spravnich poplatcich - 2021-08-13
+12. Zakon c. 96/2022 Sb., kterym se meni nektere zakony v oblasti financniho trhu zejmena v souvislosti s implementaci predpisu Evropske unie tykajicich se unie kapitalovych trhu - 2022-04-29
+13. Zakon c. 416/2022 Sb., kterym se meni nektere zakony v souvislosti s vyuzivanim digitalnich nastroju a postupu v pravu obchodnich spolecnosti a fungovanim verejnych rejstriku - 2022-12-16
+14. Zakon c. 162/2024 Sb., kterym se meni zakon c. 125/2008 Sb., o premenach obchodnich spolecnosti a druzstev, a dalsi souvisejici zakony - 2024-06-19
+
+Confirmed on this re-check: the newest measure is 162/2024 Sb., published
+19.6.2024. Every one of the fourteen was published before the Directive
+appeared in the Official Journal on 10.1.2025.

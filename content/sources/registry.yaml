@@ -168,7 +168,7 @@ sources:
     short: "EUR-Lex transposition notifications for Dir. 2025/25"
     url: "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32025L0025"
     publisher: "Publications Office of the European Union (data supplied by Member States)"
-    last_retrieved: 2026-08-27
+    last_retrieved: 2026-09-03
     retrieved_via: >-
       Fetched in a real browser; full snapshot saved to
       content/sources/raw/dir-2025-25-nim.txt. Member States bear sole
@@ -223,3 +223,65 @@ sources:
       Commission policy page fetched directly. The page describes a proposal
       for a regulation; it is not adopted law and may change or fail.
     review_cycle_days: 30
+
+  - id: cz-304-2013
+    type: law
+    status: in-force
+    title: >-
+      Zákon č. 304/2013 Sb., o veřejných rejstřících právnických a fyzických
+      osob a o evidenci svěřenských fondů (Czech Act No. 304/2013 Coll. on
+      public registers of legal and natural persons and on the register of
+      trust funds)
+    short: "Act No. 304/2013 Sb. (Czech Public Registers Act)"
+    url: "https://e-sbirka.gov.cz/sb/2013/304"
+    publisher: "Sbírka zákonů České republiky; consolidated text from e-Sbírka"
+    published: 2013-09-30
+    last_retrieved: 2026-09-03
+    retrieved_via: >-
+      Consolidated wording in force from 19 July 2024, read in a real browser on
+      e-Sbírka, the official electronic collection of Czech law. e-Sbírka labels
+      consolidated wordings "informativní znění" — the authoritative text is the
+      promulgated wording in the Sbírka zákonů. Excerpts of the provisions we
+      relied on are saved to content/sources/raw/cz-notified-acts-excerpts.txt.
+    review_cycle_days: 90
+
+  - id: cz-358-1992
+    type: law
+    status: in-force
+    title: >-
+      Zákon České národní rady č. 358/1992 Sb., o notářích a jejich činnosti
+      (notářský řád) (Czech Act No. 358/1992 Coll. on notaries and their
+      activity, the Notarial Code)
+    short: "Act No. 358/1992 Sb. (Czech Notarial Code)"
+    url: "https://e-sbirka.gov.cz/sb/1992/358"
+    publisher: "Sbírka zákonů České republiky; consolidated text from e-Sbírka"
+    published: 1992-07-07
+    last_retrieved: 2026-09-03
+    retrieved_via: >-
+      Consolidated wording in force from 1 April 2025, read in a real browser on
+      e-Sbírka. Consolidated wordings there are informative; the promulgated
+      text in the Sbírka zákonů governs. Excerpts saved to
+      content/sources/raw/cz-notified-acts-excerpts.txt.
+    review_cycle_days: 90
+
+  - id: cz-416-2022
+    type: law
+    status: in-force
+    title: >-
+      Zákon č. 416/2022 Sb., kterým se mění některé zákony v souvislosti s
+      využíváním digitálních nástrojů a postupů v právu obchodních společností
+      a fungováním veřejných rejstříků (Czech Act No. 416/2022 Coll. amending
+      certain acts in connection with the use of digital tools and processes in
+      company law and the functioning of public registers)
+    short: "Act No. 416/2022 Sb. (Czech digital company law act)"
+    url: "https://e-sbirka.gov.cz/sb/2022/416"
+    publisher: "Sbírka zákonů České republiky; consolidated text from e-Sbírka"
+    published: 2022-12-16
+    last_retrieved: 2026-09-03
+    retrieved_via: >-
+      Read in a real browser on e-Sbírka. This is the act by which Czechia
+      implemented parts of Directive (EU) 2017/1132 as amended by Directive
+      (EU) 2019/1151; its own footnote 3 names Articles 13i(4), 22(1) and 24 of
+      Directive (EU) 2017/1132. Excerpts saved to
+      content/sources/raw/cz-notified-acts-excerpts.txt.
+    review_cycle_days: 90
