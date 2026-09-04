@@ -36,8 +36,12 @@ Full text of every explainer, with citations expanded inline: ${BASE}/llms-full.
 ## Site
 
 - [What to do, by when](${BASE}/comply): The plain compliance timeline — what is obliged vs merely smart, per audience.
+- [Deadline explorer](${BASE}/deadlines): Filter the verified timetable by company, register, notary, relying party, or wallet provider.
+- [Guidance by role](${BASE}/roles): Practical briefings for banks and KYC teams, notaries, company secretaries, law firms, and identity or wallet providers.
+- [EU Inc. proposal](${BASE}/eu-inc): What the proposed 28th-regime company form says about company certificates and digital EU powers of attorney. This is a proposal, not law.
 - [Plain answers](${BASE}/questions): Common questions answered simply, each cited to the instruments (FAQ).
 - [Updates](${BASE}/updates): Dated, source-verified briefs on developments (RSS: ${BASE}/feed.xml).
+- [Reports](${BASE}/reports): Periodic status reports that separate enacted law, proposals, technical work and national implementation.
 - [Methodology](${BASE}/methodology): How claims are verified and labelled (Law / Proposal / Technical draft / Implementation note / Commentary).
 - [Sources](${BASE}/sources): The public source registry with retrieval dates.
 - [Corrections](${BASE}/corrections): Public correction log.

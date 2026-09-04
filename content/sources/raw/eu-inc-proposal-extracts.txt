@@ -1,0 +1,39 @@
+Source: EUR-Lex, CELEX 52026PC0321
+Fetched in a real browser: 2026-09-04
+Status: European Commission proposal, COM(2026) 321 final, 2026/0074(COD).
+
+Article 30 — EU Company Certificate
+
+1. The business register of registration shall issue a multilingual EU Company
+Certificate at the request of an EU Inc. company. The EU Company Certificate
+shall be accepted in all Member States as sufficient evidence, at the time of
+its issuance, of the incorporation of the company and of the information
+contained therein.
+
+2. Business registers shall issue the EU Company Certificate to the EU Inc. in
+accordance with Article 16b(1), (2) and (4) to (7) of Directive (EU) 2017/1132.
+
+3. The certificate shall be compatible with European Digital Identity Wallets
+and proposed European Business Wallets, where available.
+
+Article 31 — Digital EU power of attorney
+
+1. An EU Inc. shall be able to use the digital EU power of attorney for
+procedures in another Member State within the Regulation's scope, particularly
+company formation, branch registration or closure, and cross-border
+conversions, mergers and divisions.
+
+2. An EU Inc. can use a template available in all official Union languages to
+authorise a person to represent it in accordance with Article 16c(1) to (3) of
+Directive (EU) 2017/1132. [The proposal prints "Article 16"; the cross-reference
+is reproduced cautiously on the site because the drafting may be corrected.]
+
+3. The digital EU power of attorney shall be compatible with European Digital
+Identity Wallets and proposed European Business Wallets, where available.
+
+Article 32 applies Directive (EU) 2017/1132's exemption from legalisation and
+authenticity safeguards to EU Inc. documents, the EU Company Certificate and
+the digital EU power of attorney.
+
+The proposal says it would apply 12 months after entry into force. There is no
+application date because the proposal has not been adopted.
