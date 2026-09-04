@@ -223,14 +223,14 @@ const QA: {
     id: "business-wallet-law",
     q: "Is the EU Business Wallet law yet?",
     plain:
-      "No. It is a Commission proposal — COM(2025)0838, published 19 November 2025, in the ordinary legislative procedure as 2025/0358(COD). As last verified, the European Parliament file shows 'Awaiting committee decision'. Its content can change or fail.",
+      "No. It is a Commission proposal. The Council adopted its negotiating position on 9 June 2026, while the European Parliament procedure remains at 'Awaiting committee decision'. There is no final regulation.",
     a: (
       <>
         <p>
-          No. It is a proposal — COM(2025)0838, in the ordinary legislative
-          procedure as 2025/0358(COD), last verified at "Awaiting committee
-          decision" <Cite id="oeil-2025-0358" />. We track it — clearly
-          labelled as a proposal — at{" "}
+          No. The Council adopted its negotiating position on 9 June 2026{" "}
+          <Cite id="business-wallets-council-2026" />, while Parliament's
+          procedure remains at "Awaiting committee decision"{" "}
+          <Cite id="oeil-2025-0358" />. There is no final regulation. We track it at{" "}
           <Link href="/eidas/business-wallets">the Business Wallet page</Link>.
         </p>
       </>
@@ -276,6 +276,67 @@ const QA: {
           <Link href="/mandates/agents">valid token ≠ allowed action</Link>.
         </p>
       </>
+    ),
+  },
+  {
+    id: "wallet-means-authorised",
+    q: "Does a valid wallet credential mean the person is authorised?",
+    plain:
+      "No. Credential validation shows that the evidence is technically valid. The relying party must still check that the authority covers the requested action, the representation type is satisfied and the authority has not ended or been revoked.",
+    a: (
+      <p>
+        No. The relying party is responsible for authenticating and validating
+        what is presented <Cite id="reg-2024-1183" pin="Art. 5b(9)" />. The
+        power-of-attorney acceptance rule extends only to the entitlement
+        specified in the document <Cite id="dir-2025-25" pin="Art. 16c(2)" />.
+        See <Link href="/mandates/agents">valid credential, allowed action</Link>.
+      </p>
+    ),
+  },
+  {
+    id: "ai-agent-power-of-attorney",
+    q: "Can an AI agent hold a digital EU power of attorney?",
+    plain:
+      "The adopted instruments do not create an AI-agent attorney. Directive 2025/25 authorises a person to represent a company, while eIDAS 2 covers powers and mandates to represent natural or legal persons. Software can act within a controlled process, but the legal authority chain must lead back to a person or company recognised by the governing law.",
+    a: (
+      <p>
+        The adopted instruments do not create an AI-agent attorney. The
+        Directive authorises a person to represent a company{" "}
+        <Cite id="dir-2025-25" pin="Art. 16c(1)" />, while eIDAS 2 lists powers
+        and mandates to represent natural or legal persons{" "}
+        <Cite id="reg-2024-1183" pin="Annex VI, point 9" />. Software can act
+        inside a controlled process, but its authority chain must lead back to
+        a person or company recognised by the governing law.
+      </p>
+    ),
+  },
+  {
+    id: "eu-inc-available",
+    q: "Can I register an EU Inc. company now?",
+    plain:
+      "No. EU Inc. is a Commission proposal, COM(2026) 321. It has not been adopted and there is no registration date. Its proposed Articles 30 and 31 would apply the EU Company Certificate and digital EU power of attorney to that company form.",
+    a: (
+      <p>
+        No. EU Inc. is Commission proposal COM(2026) 321, not an available
+        company form. Its proposed Articles 30 and 31 would apply the EU
+        Company Certificate and digital EU power of attorney to an EU Inc.{" "}
+        <Cite id="eu-inc-proposal-2026" pin="Arts. 30–31" />. Follow the{" "}
+        <Link href="/eu-inc">proposal tracker</Link>.
+      </p>
+    ),
+  },
+  {
+    id: "company-buy-software-now",
+    q: "Does my company have to buy digital power-of-attorney software now?",
+    plain:
+      "No. Directive 2025/25 creates rights and duties for Member States and registers, plus certain filing duties for companies. It does not require a company to buy a wallet or power-of-attorney product now.",
+    a: (
+      <p>
+        No. The digital EU power of attorney is something a company can use{" "}
+        <Cite id="dir-2025-25" pin="Art. 16c(1)" />. The Directive does not
+        require a company to buy a wallet or power-of-attorney product. The
+        preparation work is listed at <Link href="/comply">What to do, by when</Link>.
+      </p>
     ),
   },
 ];

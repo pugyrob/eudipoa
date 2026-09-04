@@ -35,6 +35,8 @@ export default function SiteFooter() {
               <Link href="/methodology">Methodology</Link>
               <Link href="/sources">Sources</Link>
               <Link href="/updates">Updates</Link>
+              <Link href="/reports">Reports</Link>
+              <Link href="/deadlines">Deadlines</Link>
               <Link href="/corrections">Corrections</Link>
               <Link href="/changelog">Changelog</Link>
               <Link href="/contact">Contact</Link>

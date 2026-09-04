@@ -1,0 +1,36 @@
+---
+title: Directive 2025/25 for identity and wallet providers
+description: "The evidence, compatibility and relying-party boundaries identity providers need to plan for."
+author: Rob Prime
+published: 2026-09-04
+verified: 2026-09-04
+verified_against: [dir-2025-25, reg-2024-1183, ir-2025-848, eudi-arf]
+review_cycle_days: 30
+kind: explainer
+changelog:
+  - date: 2026-09-04
+    note: "First published; ARF v3.0.0 checked separately as a technical draft."
+---
+
+**A wallet can present evidence of authority. The receiving system still needs to determine whether that authority covers the requested action and remains current.**
+
+## Legal requirements and technical material
+
+The Commission's eventual implementing act for the digital EU power-of-attorney template must cover compatibility with EUDI Wallets <Cite id="dir-2025-25" pin="Art. 24(2)(e)" />. That act was due by 31 July 2026 and had not been located in the Official Journal at the 4 September check.
+
+Regulation (EU) 2024/1183 includes powers and mandates to represent natural or legal persons among the attributes that may be covered by electronic attestations <Cite id="reg-2024-1183" pin="Annex VI, point 9" />.
+
+The EUDI Architecture and Reference Framework is a living technical baseline. Version 3.0.0 was published on 21 July 2026. It is technical documentation, not law <Cite id="eudi-arf" />.
+
+## Implementation checklist
+
+- Keep credential validity separate from authority evaluation.
+- Carry issuer, subject, represented organisation, scope, validity and status.
+- Support revocation and fresh status checks.
+- Bind the relying party's request to declared purposes and requested data.
+- Preserve an auditable result, including why an action was allowed or refused.
+- Track the final Commission template act before claiming conformance.
+
+## Do not claim
+
+Do not call a private credential the official digital EU power of attorney before the legal template and national procedures apply. Do not call an ARF requirement a statutory obligation unless the legal instrument also supports it.

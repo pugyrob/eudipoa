@@ -57,6 +57,24 @@ const START_CARDS = [
     title: "Transposition, all 27 Member States",
     desc: "Notified measures tracked weekly; no row is marked verified until we have read that country's gazette.",
   },
+  {
+    href: "/deadlines",
+    label: "Deadline explorer",
+    title: "What happens when",
+    desc: "Filter each binding date by the organisation responsible. Proposed dates are kept out.",
+  },
+  {
+    href: "/eu-inc",
+    label: "Proposal tracker",
+    title: "EU Inc. and the digital EU power of attorney",
+    desc: "How COM(2026) 321 would reuse the certificate and power-of-attorney framework.",
+  },
+  {
+    href: "/roles/company-secretaries",
+    label: "By role",
+    title: "What your team needs to prepare",
+    desc: "Specific guides for company secretaries, law firms, notaries, banks and identity providers.",
+  },
 ];
 
 const KEY_DATES = [

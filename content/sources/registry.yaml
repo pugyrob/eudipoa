@@ -187,7 +187,7 @@ sources:
     short: "OEIL 2025/0358(COD) (PROPOSAL)"
     url: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0358(COD)"
     publisher: "European Parliament"
-    last_retrieved: 2026-08-27
+    last_retrieved: 2026-09-04
     retrieved_via: >-
       OEIL procedure file fetched directly. Status on that date: "Awaiting
       committee decision"; proposal COM(2025)0838 published 19.11.2025;
@@ -203,10 +203,11 @@ sources:
     short: "EUDI Wallet ARF"
     url: "https://eudi.dev/"
     publisher: "European Commission"
-    last_retrieved: 2026-08-27
+    last_retrieved: 2026-09-04
     retrieved_via: >-
-      eudi.dev fetched directly. The ARF is technical documentation, not law;
-      it changes without an OJ publication.
+      eudi.dev fetched directly. Latest release shown on that date: v3.0.0,
+      21 July 2026. The ARF is technical documentation, not law; it changes
+      without an OJ publication.
     review_cycle_days: 30
 
   - id: business-wallets-proposal
@@ -218,10 +219,44 @@ sources:
     short: "EU Business Wallet (PROPOSAL)"
     url: "https://digital-strategy.ec.europa.eu/en/policies/business-wallets"
     publisher: "European Commission"
-    last_retrieved: 2026-08-27
+    last_retrieved: 2026-09-04
     retrieved_via: >-
       Commission policy page fetched directly. The page describes a proposal
       for a regulation; it is not adopted law and may change or fail.
+    review_cycle_days: 30
+
+  - id: business-wallets-council-2026
+    type: proposal
+    status: council-general-approach
+    title: >-
+      Council of the European Union, European business wallets: Council adopts
+      negotiating position
+    short: "Council position on European Business Wallets (PROPOSAL)"
+    url: "https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/"
+    publisher: "Council of the European Union"
+    published: 2026-06-09
+    last_retrieved: 2026-09-04
+    retrieved_via: >-
+      Official Council press release read directly. It records the Council's
+      general approach and links to the negotiating text. This is a Council
+      position on a proposal, not adopted law.
+    review_cycle_days: 30
+
+  - id: eu-inc-proposal-2026
+    type: proposal
+    status: commission-proposal
+    title: >-
+      Proposal for a Regulation of the European Parliament and of the Council
+      on the 28th Regime Corporate Legal Framework — EU Inc.
+    short: "COM(2026) 321 — EU Inc. proposal"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026PC0321"
+    publisher: "European Commission"
+    published: 2026-03-18
+    last_retrieved: 2026-09-04
+    retrieved_via: >-
+      Full English proposal read in a real browser on EUR-Lex. Relevant
+      extracts are saved to content/sources/raw/eu-inc-proposal-extracts.txt.
+      This is COM(2026) 321, procedure 2026/0074(COD), not adopted law.
     review_cycle_days: 30
 
   - id: cz-304-2013

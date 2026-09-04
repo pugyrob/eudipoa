@@ -1,0 +1,41 @@
+---
+title: Digital EU powers of attorney for banks and KYC teams
+description: "What banks and KYC teams need to distinguish between identity, company data and authority."
+author: Rob Prime
+published: 2026-09-04
+verified: 2026-09-04
+verified_against: [dir-2025-25, reg-2024-1183, ir-2025-848]
+review_cycle_days: 30
+kind: explainer
+changelog:
+  - date: 2026-09-04
+    note: "First published from Directive 2025/25 and the eIDAS 2 instruments."
+---
+
+**Directive (EU) 2025/25 does not create a general banking mandate. Banks should prepare to distinguish verified identity, verified company facts and authority for the requested action.**
+
+## What the law covers
+
+The digital EU power of attorney covers company-law procedures within Directive (EU) 2017/1132, including formation, branches and cross-border conversions, mergers and divisions <Cite id="dir-2025-25" pin="Art. 16c(1)" />. It is not a general authority to operate a bank account or approve a payment.
+
+The EU Company Certificate supplies register-backed company facts <Cite id="dir-2025-25" pin="Art. 16b" />. An electronic attestation of attributes can carry evidence of powers and mandates to represent a person or company <Cite id="reg-2024-1183" pin="Annex VI, point 9" />. Neither removes the need to match the authority to the action.
+
+## What to build
+
+1. Keep identity, company status and authority as separate checks.
+2. Record the authority's source, scope, expiry and revocation state.
+3. Return a clear reason when authority is absent or too narrow.
+4. Retain the evidence used for the decision.
+5. Register wallet-relying-party information when the eIDAS regime applies <Cite id="ir-2025-848" />.
+
+## Dates
+
+| Date | Relevance |
+| --- | --- |
+| 24 December 2026 | Wallet-relying-party registration rules apply |
+| 24 December 2027 | Certain private relying parties required to use strong authentication must accept EUDI Wallets, subject to Article 5f |
+| 31 July 2028 | Main Directive 2025/25 measures apply through national law |
+
+## What is not required
+
+The Directive does not require banks to accept its digital power of attorney for ordinary banking, tax or commercial transactions. Any wider mandate depends on other Union or national law and the bank's applicable obligations.
