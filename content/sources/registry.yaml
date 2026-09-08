@@ -320,3 +320,28 @@ sources:
       Directive (EU) 2017/1132. Excerpts saved to
       content/sources/raw/cz-notified-acts-excerpts.txt.
     review_cycle_days: 90
+
+  - id: be-ministerraad-2026-07-03
+    type: implementation-note
+    status: preliminary-draft
+    title: >-
+      Belgian federal Council of Ministers, decision of 3 July 2026,
+      "Omzetting van Europese richtlijnen inzake vennootschappen" /
+      "Transposition de la directive européenne relative aux sociétés" —
+      approval of a preliminary draft law transposing Directive (EU) 2024/2810
+      and Article 2, point (5) of Directive (EU) 2025/25
+    short: "Belgian Council of Ministers decision of 3 July 2026"
+    url: "https://news.belgium.be/nl/omzetting-van-europese-richtlijnen-inzake-vennootschappen"
+    publisher: >-
+      news.belgium.be — FOD Kanselarij van de Eerste Minister / SPF Chancellerie
+      du Premier Ministre (the Belgian federal government's own press service)
+    published: 2026-07-03
+    last_retrieved: 2026-09-08
+    retrieved_via: >-
+      Both language versions read in a real browser. Full text saved to
+      content/sources/raw/be-ministerraad-2026-07-03.txt. This is a preliminary
+      draft ("voorontwerp van wet" / "avant-projet de loi") going to the Council
+      of State for opinion. It is not adopted law, it is not in the Belgisch
+      Staatsblad / Moniteur belge, and Belgium has notified nothing on the
+      EUR-Lex transposition record.
+    review_cycle_days: 30

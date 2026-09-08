@@ -1,0 +1,98 @@
+SOURCE SNAPSHOT
+===============
+Title (NL):  Omzetting van Europese richtlijnen inzake vennootschappen
+Title (FR):  Transposition de la directive europeenne relative aux societes
+Publisher:   news.belgium.be - FOD Kanselarij van de Eerste Minister,
+             algemene directie Externe Communicatie
+             (SPF Chancellerie du Premier Ministre; the Belgian federal
+             government's own press service)
+Belongs to:  Ministerraad van 3 juli 2026 / Conseil des ministres du 3 juillet 2026
+Date/time on page: 03 JUL 2026, 18:09
+URL (NL):    https://news.belgium.be/nl/omzetting-van-europese-richtlijnen-inzake-vennootschappen
+URL (FR):    https://news.belgium.be/fr/transposition-de-la-directive-europeenne-relative-aux-societes
+Ministers listed as sources: David Clarinval (vice-eersteminister, Werk,
+             Economie en Landbouw); Jan Jambon (Financien en Pensioenen);
+             Annelies Verlinden (Justitie)
+Retrieved:   2026-09-08, in a real browser (Chrome), both language versions.
+
+WHAT THIS IS
+------------
+A federal Council of Ministers decision approving a PRELIMINARY DRAFT law
+("voorontwerp van wet" / "avant-projet de loi"). It is not adopted law, it is
+not published in the Belgian Official Gazette (Belgisch Staatsblad / Moniteur
+belge), and Belgium has not communicated any measure on the EUR-Lex national
+transposition record for Directive (EU) 2025/25.
+
+DUTCH TEXT (as published)
+-------------------------
+De ministerraad keurt een voorontwerp van wet goed tot omzetting van Europese
+richtlijn 2024/2810 inzake meervoudig stemrecht voor vennootschappen, en van
+artikel 2, 5) van Europese richtlijn 2025/25 inzake voorafgaande controle van
+de oprichtingsakte en statutenwijzigingen van vennootschappen.
+
+Europese richtlijn 2024/2810, gekend als de Multiple-Vote Shares Structures
+Directive, vereist dat lidstaten vennootschappen toestaan een structuur met
+meervoudig stemrecht in te voeren of te behouden wanneer zij toelating tot de
+handel op een handelsplatform van het type multilateral trading facility (MTF)
+aanvragen, mits bepaalde waarborgen worden geboden.
+
+[paragraph on SME access to public capital markets, measure 9 of the first
+SME plan of the minister for the Middle Classes, Self-Employed and SMEs]
+
+Artikel 2, 5) van Europese richtlijn 2025/25 legt op dat de oprichtingsakte en
+statutenwijzigingen van een vennootschap onder firma (VOF) of een commanditaire
+vennootschap (CommV) moeten worden onderworpen aan een voorafgaande
+administratieve, rechterlijke of notariele controle, of een combinatie daarvan.
+
+Verder voorziet dit voorontwerp van wet in de aanpassingen die noodzakelijk
+zijn naar aanleiding van twee arresten van het Grondwettelijk Hof.
+
+Daarnaast worden een aantal terminologische en inhoudelijke verbeteringen
+aangebracht, een aantal vergetelheden hersteld en een aantal inconsistenties
+gecorrigeerd.
+
+Het voorontwerp wordt ter advies voorgelegd aan de Raad van State.
+
+Full title of the draft as given on the page:
+Voorontwerp van wet tot omzetting van richtlijn (EU) 2024/2810 van het Europees
+Parlement en de Raad van 23 oktober 2024 betreffende structuren met aandelen met
+meervoudig stemrecht in ondernemingen die om de toelating tot de handel van hun
+aandelen op een multilaterale handelsfaciliteit verzoeken, en van richtlijn (EU)
+2025/25 van het Europees Parlement en de Raad van 19 december 2024 tot wijziging
+van de Richtlijnen 2009/102/EG en (EU) 2017/1132 wat betreft de verdere
+uitbreiding en modernisering van het gebruik van digitale instrumenten en
+processen in het vennootschapsrecht, en houdende diverse bepalingen betreffende
+vennootschappen en verenigingen
+
+FRENCH TEXT (opening, as published)
+-----------------------------------
+Le Conseil des ministres a approuve un avant-projet de loi transposant la
+directive europeenne 2024/2810 relative au droit de vote multiple dans les
+societes, ainsi que l'article 2, point 5), de la directive europeenne 2025/25
+relative au controle prealable de l'acte constitutif et des modifications des
+statuts des societes.
+
+CROSS-CHECK AGAINST THE DIRECTIVE (read in content/sources/raw/dir-2025-25.txt)
+------------------------------------------------------------------------------
+Article 2, point (5) of Directive (EU) 2025/25 replaces Article 10 of Directive
+(EU) 2017/1132 with a new Article 10 "Preventive control", whose paragraph 1
+reads:
+
+  "Member States shall provide for preventive administrative, judicial or
+  notarial control, or any combination thereof, of the instrument of
+  constitution and statutes of companies listed in Annexes II and IIB at the
+  time of their formation, and of any amendments to those documents. That
+  requirement shall be without prejudice to national laws that, in accordance
+  with Member States' legal systems, require that those documents be drawn up
+  and certified in due legal form."
+
+Annex IIB is the partnership annex. The Belgian VOF/SNC (vennootschap onder
+firma / societe en nom collectif) and CommV/SComm (commanditaire vennootschap /
+societe en commandite) are the Belgian entries in it. The press release and the
+Directive text match.
+
+WHAT THIS DOES NOT SAY
+----------------------
+Nothing about the EU Company Certificate (Art. 16b), the digital EU power of
+attorney (Art. 16c), the once-only principle, or register interconnection. The
+draft covers one point of Article 2 only.
