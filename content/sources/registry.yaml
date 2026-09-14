@@ -187,11 +187,14 @@ sources:
     short: "OEIL 2025/0358(COD) (PROPOSAL)"
     url: "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0358(COD)"
     publisher: "European Parliament"
-    last_retrieved: 2026-09-04
+    last_retrieved: 2026-09-14
     retrieved_via: >-
-      OEIL procedure file fetched directly. Status on that date: "Awaiting
-      committee decision"; proposal COM(2025)0838 published 19.11.2025;
-      committee ITRE. This tracks a proposal, not law.
+      OEIL procedure file fetched directly. Stage field still reads "Awaiting
+      committee decision" as of 14 September 2026, but Key events record that
+      on 10 September 2026 ITRE voted in committee (1st reading) and adopted
+      a decision to open interinstitutional negotiations with report adopted
+      in committee. Proposal COM(2025)0838 published 19.11.2025. This tracks
+      a proposal, not law.
     review_cycle_days: 30
 
   - id: eudi-arf
